@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\scripts\\common\\destructible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\destructible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Destructible.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Common\\Destructible.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\Destructible.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Common\\Destructible.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Common\\Destructible.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-16T01:07:49.758Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
