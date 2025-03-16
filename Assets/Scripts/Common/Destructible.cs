@@ -22,7 +22,7 @@ namespace Scripts.GamePlay.Common
             {
                 currentHealth = Mathf.Clamp(value, 0, maxHeath);
                 CurrentHealthValueChanged?.Invoke();
-                Debug.LogFormat("Текущее Здоровье {0} изменилось на {1}", gameObject.name, value);
+                Debug.LogFormat("Current Health {0} changed to {1}", gameObject.name, value);
             }
         }
 
@@ -32,14 +32,14 @@ namespace Scripts.GamePlay.Common
         }
 
         /// <summary>
-        /// Метод Нанесения Урона Разрушаемого Обьекта
+        /// Method for Applying Damage to a Destructible Object
         /// </summary>
         /// <param name="damageAmount"></param>
         public void ApplyDamage(int damageAmount)
         {
             if (!isDestructible)
             {
-                Debug.LogFormat("{0} Неразрушаемый, нанести Урон невозможно", gameObject.name);
+                Debug.LogFormat("{0} is indestructible, damage cannot be applied", gameObject.name);
                 return;
             }
 
@@ -53,14 +53,14 @@ namespace Scripts.GamePlay.Common
         }
 
         /// <summary>
-        /// Метод Лечения Разрушаемого Обьекта
+        /// Method for Healing a Destructible Object
         /// </summary>
         /// <param name="healAmount"></param>
         public void ApplyHeal(int healAmount)
         {
             if (CurrentHealth >= maxHeath)
             {
-                Debug.LogFormat("У {0} Полное Здоровье, Лечение не требуется", gameObject.name);
+                Debug.LogFormat("{0} has full health, healing is not required", gameObject.name);
                 return;
             }
 
