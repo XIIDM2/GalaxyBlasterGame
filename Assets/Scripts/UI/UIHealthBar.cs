@@ -5,12 +5,14 @@ namespace Scripts.GamePlay.UI
 {
     public class UIHealthBar : MonoBehaviour
     {
-        [SerializeField] private Image healthBar;
+        [SerializeField] private Slider healthBar;
 
         [SerializeField] private Health health;
 
         private void Start()
         {
+            healthBar.maxValue = health.MaxHealth;
+
             health.CurrentHealthValueChanged += OnCurrentHealthValueChanged;
         }
 
@@ -23,7 +25,7 @@ namespace Scripts.GamePlay.UI
         {
             if (healthBar != null)
             {
-                healthBar.fillAmount = (float)health.CurrentHealth / (float)health.MaxHealth;
+                healthBar.value = health.CurrentHealth;
             }
         }
     }

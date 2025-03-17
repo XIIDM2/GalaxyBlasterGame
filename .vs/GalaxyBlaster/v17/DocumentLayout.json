@@ -3,7 +3,7 @@
   "WorkspaceRootPath": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\ui\\uihealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\scripts\\ui\\uihealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uihealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -32,7 +32,7 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIHealthBar.cs",
               "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\UI\\UIHealthBar.cs",
               "RelativeToolTip": "Assets\\Scripts\\UI\\UIHealthBar.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-16T22:50:05.422Z",
               "EditorCaption": ""

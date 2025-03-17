@@ -3,10 +3,6 @@
   "WorkspaceRootPath": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\microlight\\microbar\\scripts\\animations\\animbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:assets\\microlight\\microbar\\scripts\\animations\\animbuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\ui\\uihealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uihealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -31,19 +27,6 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "AnimBuilder.cs",
-              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Microlight\\MicroBar\\Scripts\\Animations\\AnimBuilder.cs",
-              "RelativeDocumentMoniker": "Assets\\Microlight\\MicroBar\\Scripts\\Animations\\AnimBuilder.cs",
-              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Microlight\\MicroBar\\Scripts\\Animations\\AnimBuilder.cs",
-              "RelativeToolTip": "Assets\\Microlight\\MicroBar\\Scripts\\Animations\\AnimBuilder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T23:11:37.188Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
               "Title": "UIHealthBar.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\UI\\UIHealthBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIHealthBar.cs",
@@ -51,11 +34,12 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\UIHealthBar.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-16T22:50:05.422Z"
+              "WhenOpened": "2025-03-16T22:50:05.422Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
               "Title": "Health.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Health.cs",
@@ -67,7 +51,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "Destructible.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Common\\Destructible.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\Destructible.cs",
