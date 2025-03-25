@@ -1,21 +1,23 @@
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using Zenject;
 
 namespace Scripts.GamePlay.UI
 {
     public class UIHealthBar : MonoBehaviour
     {
-        [SerializeField] private Slider healthBar;
-        [SerializeField] private TextMeshProUGUI healthText;
+        private Slider healthBar;
 
-        [SerializeField] private Health health;
+        private Health health;
 
         private void Start()
         {
-            healthBar.maxValue = health.MaxHealth;
+            health = transform.root.GetComponent<Health>();
 
             health.CurrentHealthValueChanged += OnCurrentHealthValueChanged;
+
+            healthBar = GetComponentInChildren<Slider>();
         }
 
         private void OnDestroy()
@@ -25,9 +27,7 @@ namespace Scripts.GamePlay.UI
 
         private void OnCurrentHealthValueChanged()
         {
-            healthBar.value = health.CurrentHealth;
-
-            healthText.text = $"{health.CurrentHealth}/{health.MaxHealth}";
+            healthBar.value = (float) health.CurrentHealth / health.MaxHealth;
         }
     }
 }
