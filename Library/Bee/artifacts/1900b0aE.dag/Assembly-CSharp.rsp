@@ -369,6 +369,8 @@
 "Assets/Scripts/Common/Health.cs"
 "Assets/Scripts/Player/PlayerInputController.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"
+"Assets/Scripts/Projectile/Projectile.cs"
+"Assets/Scripts/Turret/Turret.cs"
 "Assets/Scripts/UI/UIHealth.cs"
 "Assets/Scripts/UI/UIHealthBar.cs"
 "Assets/Scripts/UI/UIHealthText.cs"

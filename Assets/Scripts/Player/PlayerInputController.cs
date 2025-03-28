@@ -4,15 +4,22 @@ using UnityEngine;
 
 public class PlayerInputController : MonoBehaviour
 {
-    [SerializeField] private float movementSpeed;
-    [SerializeField] private float rotationSpeed;
+    private float verticalInput;
+    private float horizontalInput;
 
-    private float vInput;
-    private float hInput;
+    public bool Fire;
+
+    public float VerticalInput => verticalInput;
+    public float HorizontalInput => horizontalInput;
 
     private void Update()
     {
-        vInput = Input.GetAxis("Vertical") * movementSpeed;
-        hInput = Input.GetAxis("Horizontal") * rotationSpeed;
+        verticalInput = Input.GetAxisRaw("Vertical");
+        horizontalInput = Input.GetAxisRaw("Horizontal");
+
+        if (Input.GetMouseButtonDown(0))
+        {
+            Fire = true;
+        }
     }
 }

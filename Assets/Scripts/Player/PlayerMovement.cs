@@ -7,28 +7,28 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] private float movementSpeed;
     [SerializeField] private float rotationSpeed;
 
-    private float vInput;
-    private float hInput;
+    private PlayerInputController inputController;
 
-    private Rigidbody2D rb;
+    private Rigidbody2D rigidBody;
 
     private void Start()
     {
-        rb = GetComponent<Rigidbody2D>();
-    }
-
-    private void Update()
-    {
-        vInput = Input.GetAxis("Vertical") * movementSpeed;
-        hInput = Input.GetAxis("Horizontal") * rotationSpeed;
+        inputController = GetComponent<PlayerInputController>();
+        rigidBody = GetComponent<Rigidbody2D>();
     }
 
     private void FixedUpdate()
     {
-        rb.velocity = transform.up * vInput;
+        Vector3 verticalMovement = Vector2.up * inputController.VerticalInput;
+        Vector3 horizontalMovement = Vector2.right * inputController.HorizontalInput;
 
-        //rb.AddForce(Time.fixedDeltaTime * transform.up * vInput);
+        rigidBody.velocity = (verticalMovement + horizontalMovement).normalized * movementSpeed;
 
-        rb.MoveRotation(rb.rotation - hInput * Time.fixedDeltaTime);
+        // rb.AddForce(Time.fixedDeltaTime * transform.up * vInput);
+
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector2 direction = (mousePosition - transform.position).normalized;
+        float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
+        rigidBody.rotation = Mathf.LerpAngle(rigidBody.rotation, angle, rotationSpeed * Time.fixedDeltaTime);
     }
 }
