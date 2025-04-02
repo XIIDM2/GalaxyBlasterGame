@@ -6,11 +6,15 @@ public class PlayerInputController : MonoBehaviour
 {
     private float verticalInput;
     private float horizontalInput;
-
-    public bool Fire;
-
     public float VerticalInput => verticalInput;
     public float HorizontalInput => horizontalInput;
+
+    private Turret primaryTurret;
+
+    private void Start()
+    {
+        primaryTurret = GetComponentInChildren<Turret>();
+    }
 
     private void Update()
     {
@@ -19,7 +23,7 @@ public class PlayerInputController : MonoBehaviour
 
         if (Input.GetMouseButtonDown(0))
         {
-            Fire = true;
+            primaryTurret.Fire();
         }
     }
 }

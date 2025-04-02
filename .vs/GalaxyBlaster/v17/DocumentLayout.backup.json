@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\scripts\\turret\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turret\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\scripts\\enemy\\patrolzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\patrolzone.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\scripts\\projectile\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectile\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\enemy\\enemy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\player\\playerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playerinputcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\turret\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turret\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\projectile\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectile\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\common\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\common\\destructible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\destructible.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playermovement.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\ui\\uihealthbar.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -42,33 +54,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PatrolZone.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Enemy\\PatrolZone.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\PatrolZone.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Enemy\\PatrolZone.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\PatrolZone.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T17:10:09.348Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Enemy.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Enemy\\Enemy.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Enemy\\Enemy.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Enemy\\Enemy.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Enemy\\Enemy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-31T17:09:21.082Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Health.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Common\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\Health.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Common\\Health.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Common\\Health.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAAwEEAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T12:00:51.354Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "Projectile.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Projectile\\Projectile.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Projectile\\Projectile.cs",
               "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Projectile\\Projectile.cs",
               "RelativeToolTip": "Assets\\Scripts\\Projectile\\Projectile.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAIBJwCYAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T15:13:47.824Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T15:13:47.824Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Turret.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Turret\\Turret.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Turret\\Turret.cs",
               "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Turret\\Turret.cs",
               "RelativeToolTip": "Assets\\Scripts\\Turret\\Turret.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAcAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABcAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-27T14:54:54.731Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-27T14:54:54.731Z"
             },
             {
               "$type": "Document",
@@ -78,14 +126,13 @@
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerInputController.cs",
               "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Player\\PlayerInputController.cs",
               "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerInputController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-25T03:31:56.64Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-25T03:31:56.64Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "PlayerMovement.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Player\\PlayerMovement.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerMovement.cs",
@@ -97,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "CameraBehavior.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Camera\\CameraBehavior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraBehavior.cs",
@@ -109,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "UIHealthText.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\UI\\UIHealthText.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIHealthText.cs",
@@ -121,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "UIHealthBar.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\UI\\UIHealthBar.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIHealthBar.cs",
@@ -133,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "Destructible.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Common\\Destructible.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\Destructible.cs",

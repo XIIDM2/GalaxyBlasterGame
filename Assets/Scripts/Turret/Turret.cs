@@ -22,28 +22,17 @@ public class Turret : MonoBehaviour
     private void Update()
     {
         fireTimer -= Time.deltaTime;
-
-        Fire();
     }
 
-    private void Fire()
+    public void Fire()
     {
-        if (fireTimer > 0)
-        {
-            inputController.Fire = false;
-            return;
-        }
+        if (fireTimer > 0) return;
+        
+        GameObject projectileObject = Instantiate(projectilePrefab, transform.position, transform.rotation);
 
-        if (inputController.Fire)
-        {
-            GameObject projectileObject = Instantiate(projectilePrefab, transform.position, transform.rotation);
+        SetOwnerForProjectile(projectileObject);
 
-            SetOwnerForProjectile(projectileObject);
-
-            fireTimer = fireRate;
-
-            inputController.Fire = false;
-        }
+        fireTimer = fireRate;    
     }
 
     private void SetOwnerForProjectile(GameObject projectileObject)
