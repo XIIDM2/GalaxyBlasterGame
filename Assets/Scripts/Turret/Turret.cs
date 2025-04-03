@@ -8,14 +8,10 @@ public class Turret : MonoBehaviour
 
     [SerializeField] private GameObject projectilePrefab;
 
-    private PlayerInputController inputController;
-
     private float fireTimer;
 
     private void Start()
     {
-        inputController = transform.root.GetComponent<PlayerInputController>();
-
         fireRate = 1.0f;
     }
 

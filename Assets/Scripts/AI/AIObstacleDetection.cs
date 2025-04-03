@@ -8,13 +8,15 @@ public class AIObstacleDetection : MonoBehaviour
     [SerializeField] private float radius = 5.0f;
     [SerializeField] private float raycastDistance = 10f;
 
-    [SerializeField] private bool inCollisionDanger;
+    [SerializeField] private bool inCollisionRangeDanger;
+    [SerializeField] private bool collisionOnPathDanger;
 
     private CircleCollider2D circleCollider;
 
-    public bool InCollisionDanger => inCollisionDanger;
-
     private Transform owner;
+
+    private Timer timerToUpdateRayCast;
+    private float timeToUpdateRayCast = 0.3f;
 
     private void Start()
     {
@@ -29,18 +31,26 @@ public class AIObstacleDetection : MonoBehaviour
         {
             Debug.LogFormat("{0} does not contain component CircleCollider2D", gameObject.name);
         }
+
+        timerToUpdateRayCast = new Timer(timeToUpdateRayCast);
     }
 
     private void Update()
     {
-        CheckIfRayCastHitCollision();
+        timerToUpdateRayCast.Tick(Time.deltaTime);
+
+        if (timerToUpdateRayCast.IsTimerFinished)
+        {
+            CheckIfRayCastHitCollision();
+            timerToUpdateRayCast.Reset(timeToUpdateRayCast);
+        }
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (!CheckIfCollisionNeedToBeAvoided(collision)) return;
 
-        inCollisionDanger = true;
+        inCollisionRangeDanger = true;
 
         Debug.LogFormat("{0} entered Danger radius for {1}", collision.transform.root.name, gameObject.name);
     }
@@ -49,9 +59,14 @@ public class AIObstacleDetection : MonoBehaviour
     {
         if (!CheckIfCollisionNeedToBeAvoided(collision)) return;
 
-        inCollisionDanger = false;
+        inCollisionRangeDanger = false;
 
         Debug.LogFormat("{0} exit Danger radius for {1}", collision.transform.root.name, gameObject.name);
+    }
+
+    public bool CollisionDanger()
+    {
+        return (inCollisionRangeDanger || collisionOnPathDanger);
     }
 
     private bool CheckIfCollisionNeedToBeAvoided(Collider2D collision)
@@ -68,7 +83,7 @@ public class AIObstacleDetection : MonoBehaviour
     {
        RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, transform.up, raycastDistance);
 
-        inCollisionDanger = false;
+        collisionOnPathDanger = false;
 
         foreach (RaycastHit2D hit in hits)
         {
@@ -76,12 +91,13 @@ public class AIObstacleDetection : MonoBehaviour
             {
                 if (hit.collider == circleCollider || hit.collider.transform.root == owner) continue;
 
-                inCollisionDanger = true;
+                collisionOnPathDanger = true;
 
                 Debug.LogFormat("{0} on the path of {1}", hit.collider.transform.root.name, gameObject.name);
 
                 break;
             }
+
         }     
     }
     

@@ -649,6 +649,7 @@ GameObject:
   - component: {fileID: 5069972236783480192}
   - component: {fileID: 1351503554562391265}
   - component: {fileID: 7942558367179251830}
+  - component: {fileID: 8087176155422108312}
   m_Layer: 0
   m_Name: Ship
   m_TagString: Untagged
@@ -729,12 +730,12 @@ CircleCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 0.5
+  m_Radius: 5
 --- !u!114 &5069972236783480192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -774,9 +775,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 509e90306bb149c46b7c247c747cfb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 3
+  radius: 5
   raycastDistance: 10
-  inCollisionDanger: 0
+  inCollisionRangeDanger: 0
+  collisionOnPathDanger: 0
+--- !u!114 &8087176155422108312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4293761959947673551}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7725bc91547d2d4c8fa7b6221a548a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movementSpeed: 10
+  rotationSpeed: 3
 --- !u!1 &6566007307042579572
 GameObject:
   m_ObjectHideFlags: 0

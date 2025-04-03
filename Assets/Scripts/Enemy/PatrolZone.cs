@@ -6,11 +6,6 @@ public class PatrolZone : MonoBehaviour
 {
     [SerializeField] private float radius;
 
-    private void Start()
-    {
-        Debug.Log(GetRandomPositionInsideZone());
-    }
-
     public Vector3 GetRandomPositionInsideZone()
     {
         Vector3 randomPosition = Random.insideUnitCircle * radius;

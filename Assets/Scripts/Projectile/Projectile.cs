@@ -25,7 +25,7 @@ public class Projectile : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.transform.root == owner) return;
+        if (collision.isTrigger || collision.gameObject.transform.root == owner) return;
 
         if (collision.gameObject.transform.root.TryGetComponent<Health>(out Health ship))
         {
