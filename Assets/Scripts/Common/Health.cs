@@ -49,7 +49,7 @@ namespace Scripts.GamePlay
         /// <param name="damageAmount"></param>
         public void ApplyDamage(int damageAmount)
         {
-            if (!destructible.IsDestructable)
+            if (destructible.IsDestructable)
             {
                 Debug.LogFormat("{0} is indestructible, damage cannot be applied", gameObject.name);
                 return;

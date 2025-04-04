@@ -5,13 +5,13 @@ using UnityEngine;
 
 public class AIObstacleDetection : MonoBehaviour
 {
+    [SerializeField] private CircleCollider2D obstacleDetecionArea;
     [SerializeField] private float radius = 5.0f;
+
     [SerializeField] private float raycastDistance = 10f;
 
     [SerializeField] private bool inCollisionRangeDanger;
     [SerializeField] private bool collisionOnPathDanger;
-
-    private CircleCollider2D circleCollider;
 
     private Transform owner;
 
@@ -20,18 +20,17 @@ public class AIObstacleDetection : MonoBehaviour
 
     private void Start()
     {
-        owner = transform;
+        owner = transform.root;
 
-        if (TryGetComponent<CircleCollider2D>(out circleCollider))
+        if (obstacleDetecionArea != null)
         {
-            circleCollider.radius = radius;
-            circleCollider.isTrigger = true;
+            obstacleDetecionArea.radius = radius;
+            obstacleDetecionArea.isTrigger = true;
         }
         else
         {
             Debug.LogFormat("{0} does not contain component CircleCollider2D", gameObject.name);
         }
-
         timerToUpdateRayCast = new Timer(timeToUpdateRayCast);
     }
 
@@ -74,7 +73,7 @@ public class AIObstacleDetection : MonoBehaviour
         Transform rootTransform = collision.transform.root;
 
         bool isProjectile = rootTransform.TryGetComponent<Projectile>(out _);
-        bool isShip = rootTransform.TryGetComponent<Health>(out _);
+        bool isShip = rootTransform.TryGetComponent<SpaceShip>(out _);
 
         return (!isProjectile && !isShip);
     }
@@ -89,7 +88,7 @@ public class AIObstacleDetection : MonoBehaviour
         {
             if (hit.collider != null)
             {
-                if (hit.collider == circleCollider || hit.collider.transform.root == owner) continue;
+                if (hit.collider == obstacleDetecionArea || hit.collider.transform.root == owner) continue;
 
                 collisionOnPathDanger = true;
 

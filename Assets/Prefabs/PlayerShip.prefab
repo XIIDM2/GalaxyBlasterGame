@@ -625,7 +625,7 @@ GameObject:
   - component: {fileID: 7364365963839461125}
   - component: {fileID: 7323092942726554668}
   - component: {fileID: 1869810303233557076}
-  - component: {fileID: 758993282422848167}
+  - component: {fileID: 7894981117139905297}
   - component: {fileID: 7820123626829171548}
   - component: {fileID: 8642431214076109166}
   m_Layer: 0
@@ -692,7 +692,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDestructable: 1
---- !u!114 &758993282422848167
+--- !u!114 &7894981117139905297
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -701,7 +701,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 3824894164773462354}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1fab649e6fb6be341aab641f4654ee53, type: 3}
+  m_Script: {fileID: 11500000, guid: 91619dc78e65cd94b812c03ef286c5d4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
@@ -718,7 +718,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 96b5cff43c7bd1b4a859d8d278940022, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Fire: 0
 --- !u!114 &8642431214076109166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -731,8 +730,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c138be06b418184fa544c2a52a4b099, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 500
-  rotationSpeed: 50
+  movementSpeed: 20
+  rotationSpeed: 1000
 --- !u!1 &7872753208913462113
 GameObject:
   m_ObjectHideFlags: 0

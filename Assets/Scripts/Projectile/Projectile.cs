@@ -27,7 +27,7 @@ public class Projectile : MonoBehaviour
     {
         if (collision.isTrigger || collision.gameObject.transform.root == owner) return;
 
-        if (collision.gameObject.transform.root.TryGetComponent<Health>(out Health ship))
+        if (collision.gameObject.transform.root.TryGetComponent<SpaceShip>(out SpaceShip ship))
         {
             ship.ApplyDamage(damage);
         }

@@ -14,7 +14,7 @@ namespace Scripts.GamePlay.UI
 
         private void Start()
         {
-            health = GameObject.Find("PlayerShip").GetComponent<Health>();
+            health = GameObject.Find("PlayerShip").GetComponent<SpaceShip>();
 
             health.CurrentHealthValueChanged += OnCurrentHealthValueChanged;
 

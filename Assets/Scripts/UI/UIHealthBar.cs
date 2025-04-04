@@ -13,7 +13,7 @@ namespace Scripts.GamePlay.UI
 
         private void Start()
         {
-            health = transform.root.GetComponent<Health>();
+            health = transform.root.GetComponent<SpaceShip>();
 
             health.CurrentHealthValueChanged += OnCurrentHealthValueChanged;
 
