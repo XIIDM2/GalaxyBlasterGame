@@ -61,7 +61,6 @@ namespace Scripts.GamePlay
 
             if (CurrentHealth <= 0)
             {
-                CurrentHealth = 0;
                 Death?.Invoke();
                 Debug.Log("Event Death invoked");
             }
@@ -86,11 +85,6 @@ namespace Scripts.GamePlay
             }
 
             CurrentHealth += healAmount;
-
-            if (CurrentHealth >= maxHealth)
-            {
-                CurrentHealth = maxHealth;
-            }
         }
     }
 }

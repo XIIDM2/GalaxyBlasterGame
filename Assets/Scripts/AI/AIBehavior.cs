@@ -136,7 +136,6 @@ public class AIBehavior : MonoBehaviour
     {
         Vector2 direction = (Vector2)(rotationTarget - transform.position);
 
-        // Sprite looking up, so we adding "-90.0f" to angle
         float targetAngle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90.0f;
 
         Quaternion targetRotation = Quaternion.Euler(0, 0, targetAngle);

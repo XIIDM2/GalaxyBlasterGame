@@ -21,7 +21,7 @@ public class PlayerInputController : MonoBehaviour
         verticalInput = Input.GetAxisRaw("Vertical");
         horizontalInput = Input.GetAxisRaw("Horizontal");
 
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             primaryTurret.Fire();
         }

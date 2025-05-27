@@ -9,6 +9,7 @@ public class AIObstacleDetection : MonoBehaviour
     [SerializeField] private float radius = 5.0f;
 
     [SerializeField] private float raycastDistance = 10f;
+    [SerializeField] private float detectionAreaRadius = 2f;
 
     [SerializeField] private bool inCollisionRangeDanger;
     [SerializeField] private bool collisionOnPathDanger;
@@ -80,7 +81,7 @@ public class AIObstacleDetection : MonoBehaviour
 
     private void CheckIfRayCastHitCollision()
     {
-       RaycastHit2D[] hits = Physics2D.RaycastAll(transform.position, transform.up, raycastDistance);
+       RaycastHit2D[] hits = Physics2D.CircleCastAll(transform.position, detectionAreaRadius, transform.up, raycastDistance);
 
         collisionOnPathDanger = false;
 
@@ -99,10 +100,27 @@ public class AIObstacleDetection : MonoBehaviour
 
         }     
     }
-    
+
     private void OnDrawGizmos()
     {
         Gizmos.color = Color.red;
-        Gizmos.DrawRay(transform.position, transform.up * raycastDistance);
+
+        Vector3 startPos = transform.position;
+
+        Vector3 endPos = startPos + transform.up * raycastDistance;
+
+        Gizmos.DrawWireSphere(startPos, detectionAreaRadius);
+
+        Gizmos.DrawLine(startPos, endPos);
+
+        Gizmos.DrawWireSphere(endPos, detectionAreaRadius);
+
+        if (collisionOnPathDanger)
+        {
+            Gizmos.color = Color.yellow;
+            Gizmos.DrawWireSphere(startPos, detectionAreaRadius);
+            Gizmos.DrawLine(startPos, endPos);
+            Gizmos.DrawWireSphere(endPos, detectionAreaRadius);
+        }
     }
 }

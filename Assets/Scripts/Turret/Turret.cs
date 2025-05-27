@@ -8,27 +8,34 @@ public class Turret : MonoBehaviour
 
     [SerializeField] private GameObject projectilePrefab;
 
-    private float fireTimer;
+    private bool canFire = true;
 
     private void Start()
     {
         fireRate = 1.0f;
     }
 
-    private void Update()
+    private void OnDestroy()
     {
-        fireTimer -= Time.deltaTime;
+        StopCoroutine(FireCoroutine());
     }
 
     public void Fire()
     {
-        if (fireTimer > 0) return;
-        
-        GameObject projectileObject = Instantiate(projectilePrefab, transform.position, transform.rotation);
+        if (!canFire) return;
 
+        StartCoroutine(FireCoroutine());
+    }
+
+    private IEnumerator FireCoroutine()
+    {
+        canFire = false;
+        GameObject projectileObject = Instantiate(projectilePrefab, transform.position, transform.rotation);
         SetOwnerForProjectile(projectileObject);
 
-        fireTimer = fireRate;    
+        yield return new WaitForSeconds(fireRate);
+
+        canFire = true;
     }
 
     private void SetOwnerForProjectile(GameObject projectileObject)
