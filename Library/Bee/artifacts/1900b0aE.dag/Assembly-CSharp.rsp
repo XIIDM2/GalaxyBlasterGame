@@ -374,7 +374,6 @@
 "Assets/Scripts/Camera/CameraBehavior.cs"
 "Assets/Scripts/Common/Destructible.cs"
 "Assets/Scripts/Common/Health.cs"
-"Assets/Scripts/Common/Timer.cs"
 "Assets/Scripts/Enemy/Enemy.cs"
 "Assets/Scripts/Enemy/PatrolZone.cs"
 "Assets/Scripts/Player/PlayerInputController.cs"

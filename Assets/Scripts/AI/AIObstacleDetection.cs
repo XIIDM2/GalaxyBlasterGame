@@ -14,10 +14,9 @@ public class AIObstacleDetection : MonoBehaviour
     [SerializeField] private bool inCollisionRangeDanger;
     [SerializeField] private bool collisionOnPathDanger;
 
-    private Transform owner;
+    [SerializeField] private float timeToUpdateRayCast = 0.3f;
 
-    private Timer timerToUpdateRayCast;
-    private float timeToUpdateRayCast = 0.3f;
+    private Transform owner;
 
     private void Start()
     {
@@ -32,19 +31,24 @@ public class AIObstacleDetection : MonoBehaviour
         {
             Debug.LogFormat("{0} does not contain component CircleCollider2D", gameObject.name);
         }
-        timerToUpdateRayCast = new Timer(timeToUpdateRayCast);
+
+        StartCoroutine(RayCastCheckCollisionRoutine());
     }
 
-    private void Update()
+    private void OnDestroy()
     {
-        timerToUpdateRayCast.Tick(Time.deltaTime);
+        StopAllCoroutines();
+    }
 
-        if (timerToUpdateRayCast.IsTimerFinished)
+    private IEnumerator RayCastCheckCollisionRoutine()
+    {
+        while (true)
         {
             CheckIfRayCastHitCollision();
-            timerToUpdateRayCast.Reset(timeToUpdateRayCast);
+            yield return new WaitForSeconds(timeToUpdateRayCast);
         }
     }
+
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

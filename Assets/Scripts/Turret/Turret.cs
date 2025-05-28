@@ -17,7 +17,7 @@ public class Turret : MonoBehaviour
 
     private void OnDestroy()
     {
-        StopCoroutine(FireCoroutine());
+        StopAllCoroutines();
     }
 
     public void Fire()

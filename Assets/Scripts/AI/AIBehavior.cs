@@ -9,47 +9,82 @@ public class AIBehavior : MonoBehaviour
     [SerializeField] private float stoppingDistance = 10.0f;
     [SerializeField] private float fireDistance = 15.0f;
 
+    [SerializeField] private float timeToCalculateNewPosition = 1f;
+
     private PatrolZone patrolZone;
 
-    private AIObstacleDetection aIObstacleDetection;
-    private AIPlayerDetection aIPlayerDetection;
+    private AIObstacleDetection obstacleDetection;
+    private AIPlayerDetection playerDetection;
 
     private Turret primaryTurret;
 
     private Vector3 positionToMove;
 
-    private Timer timerAfterChangingPatrolPosition;
-    private float timeAfterChangingPatrolPosition = 1f;
+    private bool avoidingCollision = false;
 
     private void Start()
     {
         patrolZone = GameObject.Find("PatrolZone").GetComponent<PatrolZone>();
 
-        aIObstacleDetection = GetComponentInChildren<AIObstacleDetection>();
-        aIPlayerDetection = GetComponentInChildren<AIPlayerDetection>();
+        if (patrolZone == null )
+        {
+            Debug.LogErrorFormat("{0} did not find Patrol Zone", gameObject.name);
+        }
+
+        obstacleDetection = GetComponentInChildren<AIObstacleDetection>();
+        playerDetection = GetComponentInChildren<AIPlayerDetection>();
 
         primaryTurret = GetComponentInChildren<Turret>();
 
-        timerAfterChangingPatrolPosition = new Timer(timeAfterChangingPatrolPosition);
 
         CalculatePositionToMove();
     }
 
     private void Update()
     {
-        if (!aIPlayerDetection.IsInFight)
+        if (!playerDetection.IsInFight)
         {
-            MoveToPatrolPosition();
-
-            FindNewPositionToAvoidCollision();
-
-            FindNewPositionAfterReachingDestination();
+            HandlePatrol();
         }
         else
         {
-            MoveToTarget();
+            HandleTarget();
+        }
+    }
 
-            FireAtTarget();
+    private void OnDestroy()
+    {
+        StopAllCoroutines();
+    }
+
+    private void HandlePatrol()
+    {
+        MoveToPatrolPosition();
+
+        if (obstacleDetection.CollisionDanger() && !avoidingCollision)
+        {
+            StartCoroutine(FindNewPositionToAvoidCollisionRoutine());
+        }
+
+        FindNewPositionAfterReachingDestination();
+    }
+
+    private void HandleTarget()
+    {
+        var (target, distance, hasTarget) = CalculateDistanceToTarget();
+
+        if (!hasTarget) return;
+
+        RotateToTarget(target.position);
+
+        if (distance > stoppingDistance)
+        {
+            transform.position = Vector3.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime);
+        }
+
+        if (distance <= fireDistance)
+        {
+            primaryTurret.Fire();
         }
     }
 
@@ -76,61 +111,30 @@ public class AIBehavior : MonoBehaviour
         }
     }
 
-    private void FindNewPositionToAvoidCollision()
+    private IEnumerator FindNewPositionToAvoidCollisionRoutine()
     {
-        if (aIObstacleDetection.CollisionDanger())
-        {
-            timerAfterChangingPatrolPosition.Tick(Time.deltaTime);
+        avoidingCollision = true;
+        CalculatePositionToMove();
 
-            if (timerAfterChangingPatrolPosition.IsTimerFinished)
-            {
-                CalculatePositionToMove();
-                timerAfterChangingPatrolPosition.Reset(timeAfterChangingPatrolPosition);
-            }
+        yield return new WaitForSeconds(timeToCalculateNewPosition);
 
-        }
+        avoidingCollision = false;
+        
     }
 
-    private void MoveToTarget()
+    private (Transform target, float distance, bool hasTarget) CalculateDistanceToTarget()
     {
-        if (!aIPlayerDetection.Player) return;
-
-        var (target, distance) = CalculateDistanceToTarget();
-
-        if (distance > stoppingDistance)
+        if (!playerDetection.Player)
         {
-            transform.position = Vector3.MoveTowards(transform.position, target.position, movementSpeed * Time.deltaTime);
+            return (null, 0.0f, false);
         }
 
-        RotateToTarget(target.position);
-    }
-
-    private void FireAtTarget()
-    {
-        if (!aIPlayerDetection.Player) return;
-
-        var (target, distance) = CalculateDistanceToTarget();
-
-        RotateToTarget(target.position);
-
-        if (distance <= fireDistance)
-        {
-            primaryTurret.Fire();
-        }
-
-
-    }
-
-    private (Transform target, float distance) CalculateDistanceToTarget()
-    {
-        Transform targetPosition = aIPlayerDetection.Player;
+        Transform targetPosition = playerDetection.Player;
 
         float distanceToTarget = Vector3.Distance(transform.position, targetPosition.position);
 
-        return (targetPosition, distanceToTarget);
+        return (targetPosition, distanceToTarget, true);
     }
-
-        
 
     private void RotateToTarget(Vector3 rotationTarget)
     {
