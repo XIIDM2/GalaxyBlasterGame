@@ -2440,7 +2440,7 @@ MonoBehaviour:
   - {fileID: 1215959302}
   - {fileID: 1759041307}
   enemyPrefab: {fileID: 4293761959947673551, guid: eba645de7ffa42e40b6d1cb132a18b3c, type: 3}
-  spawnType: 1
+  spawnType: 0
   spawnPointNumber: 5
   spawnTime: 10
   spawnAmount: 5
