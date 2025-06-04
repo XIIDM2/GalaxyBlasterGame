@@ -16,16 +16,25 @@ public class SpawnerEditor : Editor
         SerializedProperty spawnPointNumber = serializedObject.FindProperty("spawnPointNumber");
         SerializedProperty spawnTime = serializedObject.FindProperty("spawnTime");
         SerializedProperty spawnAmount = serializedObject.FindProperty("spawnAmount");
+        SerializedProperty loopSpawn = serializedObject.FindProperty("loopSpawn");
+
+        EditorGUILayout.PropertyField(enemyPrefab);
 
         EditorGUILayout.PropertyField(spawnPoints);
-        EditorGUILayout.PropertyField(enemyPrefab);
         EditorGUILayout.PropertyField(spawnType);
-        EditorGUILayout.PropertyField(spawnTime);
+
         EditorGUILayout.PropertyField(spawnAmount);
+
+        EditorGUILayout.PropertyField(loopSpawn);
 
         if (spawnType.enumValueIndex == 0)
         {
             EditorGUILayout.PropertyField(spawnPointNumber);
+        }
+
+        if (loopSpawn.boolValue)
+        {
+            EditorGUILayout.PropertyField(spawnTime);
         }
 
         serializedObject.ApplyModifiedProperties();

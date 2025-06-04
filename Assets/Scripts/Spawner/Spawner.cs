@@ -10,17 +10,21 @@ public enum SpawnType
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private SpawnPoint[] spawnPoints;
-
     [SerializeField] private GameObject enemyPrefab;
+
+    [SerializeField] private SpawnPoint[] spawnPoints;
 
     [SerializeField] private SpawnType spawnType;
 
+    [SerializeField] private int spawnAmount;
+
     [SerializeField] private int spawnPointNumber;
+
+    [SerializeField] private bool loopSpawn;
 
     [SerializeField] private float spawnTime;
 
-    [SerializeField] private int spawnAmount;
+
 
     private void Start()
     {
@@ -40,7 +44,7 @@ public class Spawner : MonoBehaviour
 
     private IEnumerator SpawnEnemiesRoutine()
     {
-        while (true)
+        while (loopSpawn)
         {
             for (int i = 0; i < spawnAmount; i++)
             {

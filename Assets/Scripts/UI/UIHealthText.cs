@@ -23,7 +23,7 @@ namespace Scripts.GamePlay.UI
 
         private void OnCurrentHealthValueChanged()
         {
-            healthText.text = $"{health.CurrentHealth}/{health.MaxHealth}";
+            healthText.text = $"{(int)health.CurrentHealth}/{health.MaxHealth}";
         }
     }
 }

@@ -2434,16 +2434,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2ad807c4c84dc8b45850d807abe0fac4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  enemyPrefab: {fileID: 4293761959947673551, guid: eba645de7ffa42e40b6d1cb132a18b3c, type: 3}
   spawnPoints:
   - {fileID: 954836982}
   - {fileID: 1672491297}
   - {fileID: 1215959302}
   - {fileID: 1759041307}
-  enemyPrefab: {fileID: 4293761959947673551, guid: eba645de7ffa42e40b6d1cb132a18b3c, type: 3}
-  spawnType: 0
+  spawnType: 1
+  spawnAmount: 1
   spawnPointNumber: 5
+  loopSpawn: 1
   spawnTime: 10
-  spawnAmount: 5
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -3364,6 +3365,18 @@ PrefabInstance:
     - target: {fileID: 1869810303233557076, guid: 76cad3ce611fd8847820af71c9fc198f, type: 3}
       propertyPath: IsDestructable
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359033243106819050, guid: 76cad3ce611fd8847820af71c9fc198f, type: 3}
+      propertyPath: regenerationRate
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359033243106819050, guid: 76cad3ce611fd8847820af71c9fc198f, type: 3}
+      propertyPath: regenerationAmount
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2359033243106819050, guid: 76cad3ce611fd8847820af71c9fc198f, type: 3}
+      propertyPath: regenerationInterval
+      value: 0.1
       objectReference: {fileID: 0}
     - target: {fileID: 3824894164773462354, guid: 76cad3ce611fd8847820af71c9fc198f, type: 3}
       propertyPath: m_Name

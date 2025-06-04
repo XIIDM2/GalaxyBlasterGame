@@ -1,7 +1,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Scripts.GamePlay.Common
+namespace Scripts.Common
 {
     public class Destructible : MonoBehaviour
     {

@@ -27,7 +27,7 @@ namespace Scripts.GamePlay.UI
 
         private void OnCurrentHealthValueChanged()
         {
-            healthBar.value = (float) health.CurrentHealth / health.MaxHealth;
+            healthBar.value = health.CurrentHealth / health.MaxHealth;
         }
     }
 }

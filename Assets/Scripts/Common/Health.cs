@@ -1,90 +1,93 @@
-using Scripts.GamePlay.Common;
+using Scripts.Common;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace Scripts.GamePlay
+
+public class Health : MonoBehaviour
 {
-    public class Health : MonoBehaviour
+    public event UnityAction CurrentHealthValueChanged;
+    public event UnityAction Death;
+
+    [SerializeField] private int maxHealth = 100;
+    [SerializeField] private float currentHealth;
+
+    private Destructible destructible;
+
+    public float MaxHealth => maxHealth;
+
+    public float CurrentHealth
     {
-        public event UnityAction CurrentHealthValueChanged;
-        public event UnityAction Death;
-
-        [SerializeField] private int maxHealth = 100;
-        [SerializeField] private int currentHealth;
-
-        private Destructible destructible;
-
-        public int MaxHealth => maxHealth;
-
-        public int CurrentHealth
+        get
         {
-            get
-            {
-                return currentHealth;
-            }
-            private set
-            {
-                int previousHealth = currentHealth;
+            return currentHealth;
+        }
+        private set
+        {
+            float previousHealth = currentHealth;
 
-                currentHealth = Mathf.Clamp(value, 0, maxHealth);
+            currentHealth = Mathf.Clamp(value, 0, maxHealth);
 
-                if (previousHealth != currentHealth)
-                {
-                    CurrentHealthValueChanged?.Invoke();
-                    Debug.LogFormat("Current Health {0} changed to {1}", gameObject.name, currentHealth);
-                }
+            if (previousHealth != currentHealth)
+            {
+                CurrentHealthValueChanged?.Invoke();
+                Debug.LogFormat("Current Health {0} changed to {1}", gameObject.name, (int)currentHealth);
+                Debug.Log($"{Dead}, {FullHealth}");
             }
         }
+    }
 
-        private void Start()
+    public bool Dead = false;
+    public bool FullHealth => currentHealth >= 100;
+
+    private void Awake()
+    {
+        destructible = GetComponent<Destructible>();
+
+        CurrentHealth = maxHealth;
+    }
+
+    /// <summary>
+    /// Method for Applying Damage to a Destructible Object
+    /// </summary>
+    /// <param name="damageAmount"></param>
+    public void ApplyDamage(int damageAmount)
+    {
+        if (destructible.IsDestructable)
         {
-            destructible = GetComponent<Destructible>();
-
-            CurrentHealth = maxHealth;
+            Debug.LogFormat("{0} is indestructible, damage cannot be applied", gameObject.name);
+            return;
         }
 
-        /// <summary>
-        /// Method for Applying Damage to a Destructible Object
-        /// </summary>
-        /// <param name="damageAmount"></param>
-        public void ApplyDamage(int damageAmount)
+        if (CurrentHealth <= 0) return;
+
+        CurrentHealth -= damageAmount;
+
+        if (CurrentHealth <= 0)
         {
-            if (destructible.IsDestructable)
-            {
-                Debug.LogFormat("{0} is indestructible, damage cannot be applied", gameObject.name);
-                return;
-            }
+            Dead = true;
+            Death?.Invoke();
+            Debug.Log("Event Death invoked");
+        }
+    }
 
-            if (CurrentHealth <= 0) return;
-
-            CurrentHealth -= damageAmount;
-
-            if (CurrentHealth <= 0)
-            {
-                Death?.Invoke();
-                Debug.Log("Event Death invoked");
-            }
+    /// <summary>
+    /// Method for Healing a Destructible Object
+    /// </summary>
+    /// <param name="healAmount"></param>
+    public void ApplyHeal(float healAmount)
+    {
+        if (CurrentHealth <= 0)
+        {
+            Debug.LogFormat("{0} is dead, can not heal", gameObject.name);
+            return;
         }
 
-        /// <summary>
-        /// Method for Healing a Destructible Object
-        /// </summary>
-        /// <param name="healAmount"></param>
-        public void ApplyHeal(int healAmount)
+        if (CurrentHealth >= maxHealth)
         {
-            if (CurrentHealth <= 0)
-            {
-                Debug.LogFormat("{0} is dead, can not heal", gameObject.name);
-                return;
-            }
-
-            if (CurrentHealth >= maxHealth)
-            {
-                Debug.LogFormat("{0} has full health, healing is not required", gameObject.name);
-                return;
-            }
-
-            CurrentHealth += healAmount;
+            Debug.LogFormat("{0} has full health, healing is not required", gameObject.name);
+            return;
         }
+
+        CurrentHealth += healAmount;
     }
 }
