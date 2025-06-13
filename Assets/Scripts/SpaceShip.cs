@@ -5,5 +5,25 @@ using UnityEngine;
 
 public class SpaceShip : Health
 {
+    [SerializeField] private GameObject deathEffectPrefab;
 
+    private void Start()
+    {
+        Death += OnSpaceShipDestroy;
+    }
+
+    private void OnDestroy()
+    {
+        Death -= OnSpaceShipDestroy;
+    }
+    private void OnSpaceShipDestroy()
+    {
+        GameObject deathEffect = Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
+
+        ParticleSystem particleSystem = deathEffect.GetComponent<ParticleSystem>();
+
+        Destroy(deathEffect, particleSystem.main.duration);
+
+        Destroy(gameObject);
+    }
 }

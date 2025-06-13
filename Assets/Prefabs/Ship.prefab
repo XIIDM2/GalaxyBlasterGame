@@ -850,6 +850,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  Dead: 0
+  deathEffectPrefab: {fileID: 428229831107130820, guid: 5d8eb9eaff182944c8f63250b6e9526d, type: 3}
 --- !u!114 &8087176155422108312
 MonoBehaviour:
   m_ObjectHideFlags: 0

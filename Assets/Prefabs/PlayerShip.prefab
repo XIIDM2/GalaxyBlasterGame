@@ -707,6 +707,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
+  Dead: 0
+  deathEffectPrefab: {fileID: 428229831107130820, guid: 5d8eb9eaff182944c8f63250b6e9526d, type: 3}
 --- !u!114 &7820123626829171548
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -745,8 +747,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cba2e546fdcd6bc4ebc102373b3eb035, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  regenerationAmount: 1
-  regenerationTime: 1
+  regenerationRate: 0
+  regenerationInterval: 0
 --- !u!1 &7872753208913462113
 GameObject:
   m_ObjectHideFlags: 0

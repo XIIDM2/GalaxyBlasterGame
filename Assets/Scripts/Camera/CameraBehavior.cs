@@ -15,6 +15,9 @@ public class CameraBehavior : MonoBehaviour
 
     private void LateUpdate()
     {
-        transform.position = target.TransformPoint(cameraOffset);
+        if (target != null)
+        {
+            transform.position = target.TransformPoint(cameraOffset);
+        }
     }
 }
