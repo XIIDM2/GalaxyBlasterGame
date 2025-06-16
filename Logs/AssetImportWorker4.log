@@ -1,0 +1,493 @@
+Using pre-set license
+Built from '2022.3/staging' branch; Version is '2022.3.8f1 (b5eafc012955) revision 11922172'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19045) 64bit CoreSingleLanguage' Language: 'ru' Physical Memory: 32692 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+D:\Unity\Unity Editor\2022.3.8f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker4
+-projectPath
+D:/DEV/ProjectsForPortfolio/GalaxyBlaster
+-logFile
+Logs/AssetImportWorker4.log
+-srvPort
+63966
+Successfully changed project path to: D:/DEV/ProjectsForPortfolio/GalaxyBlaster
+D:/DEV/ProjectsForPortfolio/GalaxyBlaster
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-allocator-temp-initial-block-size-main=262144"
+    "memorysetup-allocator-temp-initial-block-size-worker=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Player connection [27364] Host "[IP] 10.20.30.44 [Port] 0 [Flags] 2 [Guid] 593922225 [EditorId] 593922225 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-5B8PLKL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [27364] Host "[IP] 10.20.30.44 [Port] 0 [Flags] 2 [Guid] 593922225 [EditorId] 593922225 [Version] 1048832 [Id] WindowsEditor(7,DESKTOP-5B8PLKL) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[Physics::Module] Initialized MultithreadedJobDispatcher with 11 workers.
+Refreshing native plugins compatible for Editor in 8.21 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.3.8f1 (b5eafc012955)
+[Subsystems] Discovering subsystems at path D:/Unity/Unity Editor/2022.3.8f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path D:/DEV/ProjectsForPortfolio/GalaxyBlaster/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 3060 Ti (ID=0x2489)
+    Vendor:   NVIDIA
+    VRAM:     8024 MB
+    Driver:   32.0.15.7652
+Initialize mono
+Mono path[0] = 'D:/Unity/Unity Editor/2022.3.8f1/Editor/Data/Managed'
+Mono path[1] = 'D:/Unity/Unity Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'D:/Unity/Unity Editor/2022.3.8f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56416
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: D:/Unity/Unity Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
+Register platform support module: D:/Unity/Unity Editor/2022.3.8f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: D:/Unity/Unity Editor/2022.3.8f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.005632 seconds.
+- Loaded All Assemblies, in  0.273 seconds
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Android Extension - Scanning For ADB Devices 2219 ms
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  2.465 seconds
+Domain Reload Profiling: 2738ms
+	BeginReloadAssembly (87ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (0ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (1ms)
+	RebuildCommonClasses (27ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (41ms)
+	LoadAllAssembliesAndSetupDomain (107ms)
+		LoadAssemblies (87ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (105ms)
+			TypeCache.Refresh (104ms)
+				TypeCache.ScanAssembly (94ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (0ms)
+	FinalizeReload (2465ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (2421ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (2303ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (2ms)
+			ProcessInitializeOnLoadAttributes (77ms)
+			ProcessInitializeOnLoadMethodAttributes (36ms)
+			AfterProcessingInitializeOnLoad (0ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (0ms)
+========================================================================
+Worker process is ready to serve import requests
+Begin MonoManager ReloadAssembly
+- Loaded All Assemblies, in  0.484 seconds
+Refreshing native plugins compatible for Editor in 2.54 ms, found 3 plugins.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Native extension for WebGL target not found
+Mono: successfully reloaded assembly
+- Finished resetting the current domain, in  0.572 seconds
+Domain Reload Profiling: 1056ms
+	BeginReloadAssembly (115ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (4ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (18ms)
+	RebuildCommonClasses (26ms)
+	RebuildNativeTypeToScriptingClass (8ms)
+	initialDomainReloadingComplete (30ms)
+	LoadAllAssembliesAndSetupDomain (305ms)
+		LoadAssemblies (212ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (161ms)
+			TypeCache.Refresh (140ms)
+				TypeCache.ScanAssembly (127ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (5ms)
+	FinalizeReload (573ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (448ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (17ms)
+			SetLoadedEditorAssemblies (3ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (48ms)
+			ProcessInitializeOnLoadAttributes (361ms)
+			ProcessInitializeOnLoadMethodAttributes (15ms)
+			AfterProcessingInitializeOnLoad (3ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (5ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.06 seconds
+Refreshing native plugins compatible for Editor in 5.74 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3815 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (59.5 KB). Loaded Objects now: 4277.
+Memory consumption went from 141.4 MB to 141.4 MB.
+Total: 3.658500 ms (FindLiveObjects: 0.401800 ms CreateObjectMapping: 0.251200 ms MarkObjects: 2.901800 ms  DeleteObjects: 0.102900 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:CustomObjectIndexerAttribute: 756ad292c208cfabdd7b50bc23989ffe -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:scripting/monoscript/fileName/GUI_Demo.cs: f32c022168490a02847cf49cb2f2f6fa -> 4bbe45592fdea2d0c96bdfdaba869c5d
+  custom:SearchIndexIgnoredProperties: e643bd26f0fe6173181afceb89e7c659 -> 
+  custom:AudioImporter_EditorPlatform: d09bf68614088b80899f8185d706f6e7 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 138597.209271 seconds.
+  path: Assets/SciFi Assets/Sprites
+  artifactKey: Guid(d2ae9ae9eba11f84bb5add9731d37618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites using Guid(d2ae9ae9eba11f84bb5add9731d37618) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4cfdd8bd2f32fc1daa8ee142ffeecc8') in 0.001673 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.058684 seconds.
+  path: Assets/SciFi Assets/Sprites/sci-fi-vector elements.png
+  artifactKey: Guid(1be3e0f18fd9e8f4aa0f0e60c5f1dd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/sci-fi-vector elements.png using Guid(1be3e0f18fd9e8f4aa0f0e60c5f1dd43) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '22daf4dc79f34f4257b7e7649affacf8') in 0.064850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 2.200811 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_1
+  artifactKey: Guid(bf5682534960c9940b9915a6d453ff6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_1 using Guid(bf5682534960c9940b9915a6d453ff6a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89934a7a8ae160c9312481daf80f1edf') in 0.000378 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.052283 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_1/Vector_1.png
+  artifactKey: Guid(9f1d90645bf7b2947aa0fd5eced02527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_1/Vector_1.png using Guid(9f1d90645bf7b2947aa0fd5eced02527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f5c2f33025abc1ce0c57b10e28cc8687') in 0.025790 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_1/Vector_4.png
+  artifactKey: Guid(da359f85c20fa664a986f4f001e2e9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_1/Vector_4.png using Guid(da359f85c20fa664a986f4f001e2e9d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fa042f022adf09211627cc47651286b8') in 0.021065 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_1/Vector_12.png
+  artifactKey: Guid(b510a6111779ccd4b8f9e9552d77467d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_1/Vector_12.png using Guid(b510a6111779ccd4b8f9e9552d77467d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dad602c3cec675636a195934218bcd34') in 0.024396 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000020 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_1/Vector_5.png
+  artifactKey: Guid(ca7868ac64d423b4c871b364403bd78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_1/Vector_5.png using Guid(ca7868ac64d423b4c871b364403bd78c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '64fa475f2d87bf59a837a13bb0676f05') in 0.013032 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_1/Vector_9.png
+  artifactKey: Guid(2c6e559bcfb706849aa1c37ad3b97510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_1/Vector_9.png using Guid(2c6e559bcfb706849aa1c37ad3b97510) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8fd099eeaa5e2fbba72e29d5d4ead9b0') in 0.019120 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 12.933375 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_9
+  artifactKey: Guid(e53aa7de173db0144990958cf63c419f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_9 using Guid(e53aa7de173db0144990958cf63c419f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dbe3f42c06b26c3b2883029a297ecd03') in 0.000367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 0.024430 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_9/vector_9.png
+  artifactKey: Guid(55bef87af84f9e741bb9be1686965c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_9/vector_9.png using Guid(55bef87af84f9e741bb9be1686965c33) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '334ebd4d8b9e620f9a1d0eddd234562d') in 0.020367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 12.756429 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_7/Vector_1.png
+  artifactKey: Guid(1e00a5fcd852e7f4f8becb3206cc0570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_7/Vector_1.png using Guid(1e00a5fcd852e7f4f8becb3206cc0570) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36180ad039502ca49c1d9df3ffd859e1') in 0.018678 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 27.667118 seconds.
+  path: Assets/ExternalAssets/Sci-Fi UI/Demo_Assets/background/Space.tga.jpg
+  artifactKey: Guid(b76b8b216adf64f4bbdb78f7977f0310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/ExternalAssets/Sci-Fi UI/Demo_Assets/background/Space.tga.jpg using Guid(b76b8b216adf64f4bbdb78f7977f0310) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac9c4f689a10de8dbefef62d231d083') in 0.036212 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_2/Vector_2.png
+  artifactKey: Guid(4756bd25440466649bf98ec927121a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_2/Vector_2.png using Guid(4756bd25440466649bf98ec927121a16) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '88b9e0d304c13b2833fac5a1b128c3da') in 0.021275 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000017 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_6/Vector_3.png
+  artifactKey: Guid(8a2d9f5bfd986eb4fb86d42455b87052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_6/Vector_3.png using Guid(8a2d9f5bfd986eb4fb86d42455b87052) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '92c863c18c4ee51c3a376caa82158be0') in 0.019683 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_3/Vector_4.png
+  artifactKey: Guid(5d8aa96cb1161bc4baac7f4db8332bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_3/Vector_4.png using Guid(5d8aa96cb1161bc4baac7f4db8332bbf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23afef44712282fcd4a92df6d86fa800') in 0.017712 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_6/Vector_1.png
+  artifactKey: Guid(353b7e19780220c488a025dbd9cb726a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_6/Vector_1.png using Guid(353b7e19780220c488a025dbd9cb726a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fbe4c235ad9d4d0c75264bb3e1f7ae0b') in 0.022398 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000018 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/vect5/Vector_1.png
+  artifactKey: Guid(1aea18286ebda984387f4c299e0db705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/vect5/Vector_1.png using Guid(1aea18286ebda984387f4c299e0db705) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce4f1f324ac426cab2d38fe06ad083ec') in 0.018194 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_3/Vector_3.png
+  artifactKey: Guid(433d1832c1d153d46854c1556dc20f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_3/Vector_3.png using Guid(433d1832c1d153d46854c1556dc20f6d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7e6b5781e0622ebb7c673321edcd186') in 0.029850 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/Vector_2.png
+  artifactKey: Guid(59fc4edf30aca3c48b140d27ab8dcbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/Vector_2.png using Guid(59fc4edf30aca3c48b140d27ab8dcbcb) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '36fb409046a8e26820dfc7388fe8e504') in 0.022264 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/Vector_1.png
+  artifactKey: Guid(2fe4e0aebd00e6f4f87c8eaef1545e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/Vector_1.png using Guid(2fe4e0aebd00e6f4f87c8eaef1545e63) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b6322781da742c95951f34f72ab8ed7f') in 0.019977 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_3/Vector_2.png
+  artifactKey: Guid(e992ce3fe8b20414bb33abeb34f37f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_3/Vector_2.png using Guid(e992ce3fe8b20414bb33abeb34f37f10) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f9d1fdc9ce39377e56354ceb419602f3') in 0.016229 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.870170 seconds.
+  path: Assets/SciFi Assets/Prefabs/GunSign.prefab
+  artifactKey: Guid(d3c0de27a34388647b6bd55898c82c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Prefabs/GunSign.prefab using Guid(d3c0de27a34388647b6bd55898c82c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '862981f85ebd1264273cfff1e5b8b031') in 0.010131 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 4.397942 seconds.
+  path: Assets/SciFi Assets/Prefabs/GunSign.prefab
+  artifactKey: Guid(d3c0de27a34388647b6bd55898c82c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Prefabs/GunSign.prefab using Guid(d3c0de27a34388647b6bd55898c82c59) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9fce81fd4e09ca8928dae7a7e01cccee') in 0.001735 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 8
+========================================================================
+Received Import Request.
+  Time since last request: 356.797672 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/Vector_5.png
+  artifactKey: Guid(1d707f25cbe4ef843ae6cf0cc720c527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/Vector_5.png using Guid(1d707f25cbe4ef843ae6cf0cc720c527) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '32d7cedd377be41c9790b0918e682b08') in 0.017269 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.038832 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_3/Vector_5.png
+  artifactKey: Guid(cf3d7030fa2d2d94784e753ff9e1ead5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_3/Vector_5.png using Guid(cf3d7030fa2d2d94784e753ff9e1ead5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1dec1767935b6e333e6036af31c0c8e1') in 0.021553 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_6/Vector_5.png
+  artifactKey: Guid(b4140c174cd07cc4bb1fbc207d91c643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_6/Vector_5.png using Guid(b4140c174cd07cc4bb1fbc207d91c643) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa13f05916dac46c11c52a345ca9b3f0') in 0.018694 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000015 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_2/Vector_6.png
+  artifactKey: Guid(3deff3ad3052c1e4689ca72ec15a6e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_2/Vector_6.png using Guid(3deff3ad3052c1e4689ca72ec15a6e13) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '23280fb859a0d71651fa585d53515040') in 0.017372 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000012 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/vect5/Vector_7.png
+  artifactKey: Guid(1a622badfe78d3b4ab729930530dd418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/vect5/Vector_7.png using Guid(1a622badfe78d3b4ab729930530dd418) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '918692b0c6ee0e40f912971e4c65cea5') in 0.020515 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/Vector_7.png
+  artifactKey: Guid(7e2d4c91b43eed64596ce49778c05ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/Vector_7.png using Guid(7e2d4c91b43eed64596ce49778c05ccd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35a92a86bcd5ae85f99f2cacc72ccab7') in 0.013423 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000013 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/vect5/Vector_8.png
+  artifactKey: Guid(54d1017155fb09a428a04e5c576a67a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/vect5/Vector_8.png using Guid(54d1017155fb09a428a04e5c576a67a4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e160071d984a911f89861d1f3859f7c2') in 0.023306 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/Vector_8.png
+  artifactKey: Guid(8eaa34c5fa14cc04dbf6dc6ff0761cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/Vector_8.png using Guid(8eaa34c5fa14cc04dbf6dc6ff0761cee) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ddf2cd46f6eceac8e40b9d30243cc380') in 0.024809 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000124 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_4/Vector_10.png
+  artifactKey: Guid(ca456457fba9f7a4caf70d0732fcba7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_4/Vector_10.png using Guid(ca456457fba9f7a4caf70d0732fcba7b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e1440e0915edd11c0fda433653586b92') in 0.022958 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_5/vect5/Vector_9.png
+  artifactKey: Guid(d7b413e106bf387428137e34435a398e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_5/vect5/Vector_9.png using Guid(d7b413e106bf387428137e34435a398e) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6115f9d52781258b3d7433fae99a805b') in 0.024987 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_4/Vector_12.png
+  artifactKey: Guid(9bfc002067b19134a9b3c2abf2de7bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_4/Vector_12.png using Guid(9bfc002067b19134a9b3c2abf2de7bd8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79a3fb35d9ed7af18e5de52b35648b6d') in 0.021367 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_3/Vector_11.png
+  artifactKey: Guid(81df46eee892df843812c8e05042047b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_3/Vector_11.png using Guid(81df46eee892df843812c8e05042047b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abce1fea08522056cfe10ce66e2e58e2') in 0.021532 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000014 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_3/Vector_8.png
+  artifactKey: Guid(2519dcb2760bc3343b079e105bd4a6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_3/Vector_8.png using Guid(2519dcb2760bc3343b079e105bd4a6da) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '502ecec79eb9d17fc22c25469de3f3a7') in 0.024559 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000016 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_4/Vector_5.png
+  artifactKey: Guid(2ae60a749fb28004dbde436f8836b6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_4/Vector_5.png using Guid(2ae60a749fb28004dbde436f8836b6f8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ce1e9b08c5b96224fa57aba9269dfda8') in 0.023746 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+========================================================================
+Received Import Request.
+  Time since last request: 0.000019 seconds.
+  path: Assets/SciFi Assets/Sprites/vector_4/Vector_7.png
+  artifactKey: Guid(8c76d139fc8f53b4d8920d458235e8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/SciFi Assets/Sprites/vector_4/Vector_7.png using Guid(8c76d139fc8f53b4d8920d458235e8df) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '68eaa3651f379cfa4407ddf6287c8274') in 0.021520 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 3
+Editor requested this worker to shutdown with reason: Scaling down because of idle timeout
+TcpMessagingSession - receive error: operation aborted. errorcode: 995, details: ќпераци€ ввода/вывода была прервана из-за завершени€ потока команд или по запросу приложени€.
+AssetImportWorker is now disconnected from the server
+Process exiting
+Exiting without the bug reporter. Application will terminate with return code 0

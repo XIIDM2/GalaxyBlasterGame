@@ -79,6 +79,7 @@
     <Compile Include="Assets\Scripts\Projectile\Projectile.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_PhoneNumberValidator.cs" />
     <Compile Include="Assets\Scripts\Spawner\SpawnPoint.cs" />
+    <Compile Include="Assets\Scripts\UI\UIWindowPanel.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexJitter.cs" />
     <Compile Include="Assets\Scripts\Camera\CameraBehavior.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_DigitValidator.cs" />
@@ -95,10 +96,12 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
     <Compile Include="Assets\Scripts\UI\UIHealthText.cs" />
     <Compile Include="Assets\Scripts\AI\AIObstacleDetection.cs" />
+    <Compile Include="Assets\Scripts\CustomCursor.cs" />
     <Compile Include="Assets\Scripts\UI\UIHealthBar.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextSelector_B.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerInputController.cs" />
     <Compile Include="Assets\Scripts\Common\Destructible.cs" />
+    <Compile Include="Assets\Scripts\SceneController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\SkewTextExample.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\WarpTextExample.cs" />
     <Compile Include="Assets\Scripts\SpaceShip.cs" />
@@ -108,6 +111,8 @@
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\CameraController.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark03.cs" />
     <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
+    <Compile Include="Assets\Scripts\UI\UIPauseButton.cs" />
+    <Compile Include="Assets\ExternalAssets\Sci-Fi UI\Demo_Assets\scripts\GUI_Demo.cs" />
     <Compile Include="Assets\Scripts\Spawner\Spawner.cs" />
     <Compile Include="Assets\Scripts\AI\AIPlayerDetection.cs" />
     <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextInfoDebugTool.cs" />
@@ -121,6 +126,7 @@
     <None Include="Assets\TextMesh Pro\Shaders\TMPro_Mobile.cginc" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF SSD.shader" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface-Mobile.shader" />
+    <None Include="Assets\SciFi Assets\Documentation\Readme.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Surface.shader" />
     <None Include="Assets\TextMesh Pro\Sprites\EmojiOne Attribution.txt" />
     <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap-Custom-Atlas.shader" />
