@@ -16,7 +16,7 @@ public class SpaceShip : Health
     {
         Death -= OnSpaceShipDestroy;
     }
-    private void OnSpaceShipDestroy()
+    protected virtual void OnSpaceShipDestroy()
     {
         GameObject deathEffect = Instantiate(deathEffectPrefab, transform.position, Quaternion.identity);
 

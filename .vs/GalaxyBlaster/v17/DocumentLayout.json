@@ -3,24 +3,36 @@
   "WorkspaceRootPath": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\scripts\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\scripts\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\scripts\\customcursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\customcursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblaster\\assets\\scripts\\ui\\uidefeatpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uidefeatpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\player\\playership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\player\\playership.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\spaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\common\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\mainmenuui.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\scenecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\customcursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\customcursor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Button.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\ui\\uipausebutton.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -29,10 +41,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\ui\\uiwindowpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uiwindowpanel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\spaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DA5784F0-82D7-3443-8114-E5384DE4C71B}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\assets\\scripts\\camera\\camerabehavior.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -46,11 +54,63 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "UIDefeatPanel.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\UI\\UIDefeatPanel.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIDefeatPanel.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\UI\\UIDefeatPanel.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIDefeatPanel.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAgwDMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T23:50:40.679Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "PlayerShip.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Player\\PlayerShip.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Player\\PlayerShip.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Player\\PlayerShip.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Player\\PlayerShip.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-23T23:24:13.534Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "SpaceShip.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\SpaceShip.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceShip.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\SpaceShip.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpaceShip.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-13T03:32:16.714Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "SceneController.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\SceneController.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneController.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\SceneController.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SceneController.cs",
+              "ViewState": "AgIAAE0AAAAAAAAAAAAuwFsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T13:25:59.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "MainMenuUI.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\UI\\MainMenuUI.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\MainMenuUI.cs",
@@ -58,12 +118,11 @@
               "RelativeToolTip": "Assets\\Scripts\\UI\\MainMenuUI.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-21T22:39:11.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-21T22:39:11.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 7,
               "Title": "Button.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Button.cs",
               "RelativeDocumentMoniker": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Button.cs",
@@ -71,11 +130,12 @@
               "RelativeToolTip": "Library\\PackageCache\\com.unity.ugui@1.0.0\\Runtime\\UI\\Core\\Button.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAApwEUAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T15:09:09.225Z"
+              "WhenOpened": "2025-06-16T15:09:09.225Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "CustomCursor.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\CustomCursor.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\CustomCursor.cs",
@@ -83,12 +143,11 @@
               "RelativeToolTip": "Assets\\Scripts\\CustomCursor.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T14:59:30.911Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-06-16T14:59:30.911Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "UIWindowPanel.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\UI\\UIWindowPanel.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIWindowPanel.cs",
@@ -100,7 +159,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "UIPauseButton.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\UI\\UIPauseButton.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIPauseButton.cs",
@@ -112,19 +171,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SceneController.cs",
-              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\SceneController.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SceneController.cs",
-              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\SceneController.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SceneController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-16T13:25:59.071Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "CameraBehavior.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Camera\\CameraBehavior.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Camera\\CameraBehavior.cs",
@@ -136,27 +183,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "SpaceShip.cs",
-              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\SpaceShip.cs",
-              "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceShip.cs",
-              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\SpaceShip.cs",
-              "RelativeToolTip": "Assets\\Scripts\\SpaceShip.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-13T03:32:16.714Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "Health.cs",
               "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Common\\Health.cs",
               "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\Health.cs",
               "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlaster\\Assets\\Scripts\\Common\\Health.cs",
               "RelativeToolTip": "Assets\\Scripts\\Common\\Health.cs",
-              "ViewState": "AgIAADoAAAAAAAAAAAAcwCAAAABqAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCAAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-28T12:00:51.354Z"
+              "WhenOpened": "2025-03-28T12:00:51.354Z",
+              "EditorCaption": ""
             }
           ]
         }
