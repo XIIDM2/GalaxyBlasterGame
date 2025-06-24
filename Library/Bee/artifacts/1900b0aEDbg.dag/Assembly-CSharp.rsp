@@ -384,6 +384,7 @@
 "Assets/Scripts/Common/HealthRegeneration.cs"
 "Assets/Scripts/CustomCursor.cs"
 "Assets/Scripts/Enemy/Enemy.cs"
+"Assets/Scripts/Enemy/EnemyShip.cs"
 "Assets/Scripts/Enemy/PatrolZone.cs"
 "Assets/Scripts/Player/PlayerInputController.cs"
 "Assets/Scripts/Player/PlayerMovement.cs"

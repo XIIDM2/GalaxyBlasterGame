@@ -10,7 +10,7 @@ public enum SpawnType
 
 public class Spawner : MonoBehaviour
 {
-    [SerializeField] private GameObject enemyPrefab;
+    [SerializeField] private GameObject entityPrefab;
 
     [SerializeField] private SpawnPoint[] spawnPoints;
 
@@ -33,7 +33,16 @@ public class Spawner : MonoBehaviour
             Debug.LogError("spawnPoints are none!");
         }
 
-        StartCoroutine(SpawnEnemiesRoutine());
+
+        if (!loopSpawn)
+        {
+            SpawnEntities();
+        }
+        else 
+        {
+            StartCoroutine(SpawnEntitiesRoutine());
+        }
+
 
     }
 
@@ -42,7 +51,19 @@ public class Spawner : MonoBehaviour
         StopAllCoroutines();
     }
 
-    private IEnumerator SpawnEnemiesRoutine()
+    private void SpawnEntities()
+    {
+        if (spawnType == SpawnType.Fixed)
+        {
+            SpawnEntityAtPoint(spawnPointNumber);
+        }
+        else if (spawnType == SpawnType.Random)
+        {
+            SpawnEntityAtRandomSpawnPoint();
+        }
+    }
+
+    private IEnumerator SpawnEntitiesRoutine()
     {
         while (loopSpawn)
         {
@@ -50,11 +71,11 @@ public class Spawner : MonoBehaviour
             {
                 if (spawnType == SpawnType.Fixed)
                 {
-                    SpawnEnemyAtSpawnPoint(spawnPointNumber);
+                    SpawnEntityAtPoint(spawnPointNumber);
                 }
                 else if (spawnType == SpawnType.Random)
                 {
-                    SpawnEnemyAtRandomSpawnPoint();
+                    SpawnEntityAtRandomSpawnPoint();
                 }
             }
 
@@ -63,7 +84,7 @@ public class Spawner : MonoBehaviour
         }
     }
 
-    private void SpawnEnemyAtSpawnPoint(int spawnPointNumber)
+    private void SpawnEntityAtPoint(int spawnPointNumber)
     {
         if (spawnPointNumber < 0 || spawnPointNumber >= spawnPoints.Length)
         {
@@ -73,16 +94,16 @@ public class Spawner : MonoBehaviour
 
         Vector3 spawnPosition = GetRandomPositionInSpawnPoint(spawnPointNumber);
 
-        SpawnEnemy(spawnPosition);
+        SpawnEntity(spawnPosition);
     }
 
-    private void SpawnEnemyAtRandomSpawnPoint()
+    private void SpawnEntityAtRandomSpawnPoint()
     {
         int randomSpawnPointNumber = Random.Range(0, spawnPoints.Length);
 
         Vector3 spawnPosition = GetRandomPositionInSpawnPoint(randomSpawnPointNumber);
 
-        SpawnEnemy(spawnPosition);
+        SpawnEntity(spawnPosition);
     }
 
     private Vector3 GetRandomPositionInSpawnPoint(int spawnPointNumber)
@@ -105,9 +126,9 @@ public class Spawner : MonoBehaviour
     
     }
 
-    private void SpawnEnemy(Vector3 spawnPosition)
+    private void SpawnEntity(Vector3 spawnPosition)
     {
-        Instantiate(enemyPrefab, spawnPosition, Quaternion.identity);
+        Instantiate(entityPrefab, spawnPosition, Quaternion.identity);
     }
         
 }

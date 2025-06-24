@@ -127,7 +127,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   obstacleDetecionArea: {fileID: 7121601686255482452}
-  radius: 5
+  radius: 10
   raycastDistance: 10
   detectionAreaRadius: 2
   inCollisionRangeDanger: 0
@@ -732,9 +732,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6809391617897347211}
   - component: {fileID: 1109820977456364560}
-  - component: {fileID: 8533149650727827983}
   - component: {fileID: 5069972236783480192}
-  - component: {fileID: 4830969914691825140}
+  - component: {fileID: -3345374166171595608}
   - component: {fileID: 8087176155422108312}
   m_Layer: 0
   m_Name: Ship
@@ -786,43 +785,8 @@ Rigidbody2D:
     m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
   m_Constraints: 0
---- !u!58 &8533149650727827983
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4293761959947673551}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  serializedVersion: 2
-  m_Radius: 20
 --- !u!114 &5069972236783480192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -836,7 +800,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   IsDestructable: 0
---- !u!114 &4830969914691825140
+--- !u!114 &-3345374166171595608
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -845,13 +809,14 @@ MonoBehaviour:
   m_GameObject: {fileID: 4293761959947673551}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 91619dc78e65cd94b812c03ef286c5d4, type: 3}
+  m_Script: {fileID: 11500000, guid: 6bb365c675c3c1e4c86cbce459ba7044, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   maxHealth: 100
   currentHealth: 0
   Dead: 0
   deathEffectPrefab: {fileID: 428229831107130820, guid: 5d8eb9eaff182944c8f63250b6e9526d, type: 3}
+  addedScore: 1
 --- !u!114 &8087176155422108312
 MonoBehaviour:
   m_ObjectHideFlags: 0

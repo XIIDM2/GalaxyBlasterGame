@@ -30,8 +30,7 @@ public class Health : MonoBehaviour
             if (previousHealth != currentHealth)
             {
                 CurrentHealthValueChanged?.Invoke();
-                Debug.LogFormat("Current Health {0} changed to {1}", gameObject.name, (int)currentHealth);
-                Debug.Log($"{Dead}, {FullHealth}");
+                //Debug.LogFormat("Current Health {0} changed to {1}", gameObject.name, (int)currentHealth);
             }
         }
     }

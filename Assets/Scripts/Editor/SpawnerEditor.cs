@@ -10,7 +10,7 @@ public class SpawnerEditor : Editor
     {
         serializedObject.Update();
 
-        SerializedProperty enemyPrefab = serializedObject.FindProperty("enemyPrefab");
+        SerializedProperty entityPrefab = serializedObject.FindProperty("entityPrefab");
         SerializedProperty spawnPoints = serializedObject.FindProperty("spawnPoints");
         SerializedProperty spawnType = serializedObject.FindProperty("spawnType");
         SerializedProperty spawnPointNumber = serializedObject.FindProperty("spawnPointNumber");
@@ -18,7 +18,7 @@ public class SpawnerEditor : Editor
         SerializedProperty spawnAmount = serializedObject.FindProperty("spawnAmount");
         SerializedProperty loopSpawn = serializedObject.FindProperty("loopSpawn");
 
-        EditorGUILayout.PropertyField(enemyPrefab);
+        EditorGUILayout.PropertyField(entityPrefab);
 
         EditorGUILayout.PropertyField(spawnPoints);
         EditorGUILayout.PropertyField(spawnType);

@@ -6,7 +6,7 @@ using UnityEngine;
 public class AIObstacleDetection : MonoBehaviour
 {
     [SerializeField] private CircleCollider2D obstacleDetecionArea;
-    [SerializeField] private float radius = 5.0f;
+    [SerializeField] private float radius = 10.0f;
 
     [SerializeField] private float raycastDistance = 10f;
     [SerializeField] private float detectionAreaRadius = 2f;
@@ -52,7 +52,7 @@ public class AIObstacleDetection : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (!CheckIfCollisionNeedToBeAvoided(collision)) return;
+        if (CheckIfCollisionNeedToBeIgnored(collision)) return;
 
         inCollisionRangeDanger = true;
 
@@ -61,7 +61,7 @@ public class AIObstacleDetection : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        if (!CheckIfCollisionNeedToBeAvoided(collision)) return;
+        if (CheckIfCollisionNeedToBeIgnored(collision)) return;
 
         inCollisionRangeDanger = false;
 
@@ -73,14 +73,14 @@ public class AIObstacleDetection : MonoBehaviour
         return (inCollisionRangeDanger || collisionOnPathDanger);
     }
 
-    private bool CheckIfCollisionNeedToBeAvoided(Collider2D collision)
+    private bool CheckIfCollisionNeedToBeIgnored(Collider2D collision)
     {
         Transform rootTransform = collision.transform.root;
 
         bool isProjectile = rootTransform.TryGetComponent<Projectile>(out _);
-        bool isShip = rootTransform.TryGetComponent<SpaceShip>(out _);
+        bool isPlayer = rootTransform.TryGetComponent<PlayerInputController>(out _);
 
-        return (!isProjectile && !isShip);
+        return (isProjectile || isPlayer);
     }
 
     private void CheckIfRayCastHitCollision()
@@ -95,9 +95,11 @@ public class AIObstacleDetection : MonoBehaviour
             {
                 if (hit.collider == obstacleDetecionArea || hit.collider.transform.root == owner) continue;
 
+                if (CheckIfCollisionNeedToBeIgnored(hit.collider)) continue;
+
                 collisionOnPathDanger = true;
 
-                Debug.LogFormat("{0} on the path of {1}", hit.collider.transform.root.name, gameObject.name);
+                //Debug.LogFormat("{0} on the path of {1}", hit.collider.transform.root.name, gameObject.name);
 
                 break;
             }

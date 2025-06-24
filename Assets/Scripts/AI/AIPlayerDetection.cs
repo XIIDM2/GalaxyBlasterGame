@@ -36,7 +36,7 @@ public class AIPlayerDetection : MonoBehaviour
 
         isInFight = true;
 
-        Debug.LogFormat("{0} entered Fight radius for {1}", collision.transform.root.name, gameObject.name);
+       // Debug.LogFormat("{0} entered Fight radius for {1}", collision.transform.root.name, gameObject.name);
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -47,7 +47,7 @@ public class AIPlayerDetection : MonoBehaviour
 
         isInFight = false;
 
-        Debug.LogFormat("{0} exit Fight radius for {1}", collision.transform.root.name, gameObject.name);
+        //Debug.LogFormat("{0} exit Fight radius for {1}", collision.transform.root.name, gameObject.name);
     }
 
     private void SetTarget(Transform target)

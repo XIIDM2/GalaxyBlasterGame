@@ -24,6 +24,7 @@ public class AIBehavior : MonoBehaviour
 
     private void Start()
     {
+        
         patrolZone = GameObject.Find("PatrolZone").GetComponent<PatrolZone>();
 
         if (patrolZone == null )
@@ -46,7 +47,7 @@ public class AIBehavior : MonoBehaviour
         {
             HandlePatrol();
         }
-        else
+        else 
         {
             HandleTarget();
         }
@@ -74,6 +75,11 @@ public class AIBehavior : MonoBehaviour
         var (target, distance, hasTarget) = CalculateDistanceToTarget();
 
         if (!hasTarget) return;
+
+        if (obstacleDetection.CollisionDanger() && !avoidingCollision)
+        {
+            StartCoroutine(FindNewPositionToAvoidCollisionRoutine());
+        }
 
         RotateToTarget(target.position);
 

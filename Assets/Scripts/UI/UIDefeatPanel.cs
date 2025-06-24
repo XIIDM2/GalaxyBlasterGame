@@ -1,9 +1,11 @@
 using UnityEngine;
 using DG.Tweening;
+using TMPro;
 
 public class UIDefeatPanel : MonoBehaviour
 {
     [SerializeField] private GameObject defeatPanel;
+    [SerializeField] private TMP_Text scoreText;
 
     private CanvasGroup canvasGroup;
 
@@ -14,6 +16,7 @@ public class UIDefeatPanel : MonoBehaviour
         defeatPanel.SetActive(false);
 
         SceneController.Instance.Defeat += ShowDefeatPanel;
+
     }
 
     private void OnDestroy()
@@ -37,6 +40,8 @@ public class UIDefeatPanel : MonoBehaviour
     private void ShowDefeatPanel()
     {
         defeatPanel.SetActive(true);
+
+        scoreText.text = $"Score: {SceneController.Instance.Score.ToString()}";
 
         canvasGroup.alpha = 0;
         defeatPanel.transform.localScale = Vector3.zero;

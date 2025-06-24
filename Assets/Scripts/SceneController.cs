@@ -40,8 +40,24 @@ public class SceneController : MonoBehaviour
     }
 
     public UnityAction Defeat;
+    public UnityAction ScoreChanged;
 
     private Coroutine slowTimeCoroutine;
+
+    private int score = 0;
+
+    public int Score
+    {
+        get
+        {
+            return score;
+        }
+        set
+        {
+            score = value;
+            ScoreChanged?.Invoke();
+        }
+    }
 
     private void Awake()
     {
