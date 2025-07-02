@@ -31,6 +31,7 @@ public class Turret : MonoBehaviour
     {
         canFire = false;
         GameObject projectileObject = Instantiate(projectilePrefab, transform.position, transform.rotation);
+        Managers.Audio.PlayFireSound();
         SetOwnerForProjectile(projectileObject);
 
         yield return new WaitForSeconds(fireRate);

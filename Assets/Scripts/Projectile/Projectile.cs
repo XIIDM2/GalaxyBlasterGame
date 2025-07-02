@@ -30,6 +30,7 @@ public class Projectile : MonoBehaviour
         if (collision.gameObject.transform.root.TryGetComponent<SpaceShip>(out SpaceShip ship))
         {
             ship.ApplyDamage(damage);
+            Managers.Audio.PlaySpaceShipHitSound();
         }
 
         Instantiate(impactEffect, transform.position, Quaternion.identity);

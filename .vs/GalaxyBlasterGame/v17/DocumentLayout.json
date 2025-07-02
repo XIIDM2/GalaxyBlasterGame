@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblastergame\\assets\\scripts\\projectile\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\projectile\\projectile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblastergame\\assets\\scripts\\common\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\common\\health.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblastergame\\assets\\scripts\\spaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\spaceship.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|d:\\dev\\projectsforportfolio\\galaxyblastergame\\assets\\scripts\\turret\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\turret\\turret.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\assets\\scripts\\managers\\managers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\managers\\managers.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\assets\\scripts\\sounds\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sounds\\audiomanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\assets\\scripts\\ui\\uimainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\ui\\uimainmenu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\assets\\scripts\\sounds\\uibuttonsounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5547C944-8C65-92CA-6AFD-F4ADC546E1EE}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\sounds\\uibuttonsounds.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Projectile.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Projectile\\Projectile.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Projectile\\Projectile.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Projectile\\Projectile.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Projectile\\Projectile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T07:08:10.699Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Health.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Common\\Health.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Common\\Health.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Common\\Health.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Common\\Health.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T07:04:42.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SpaceShip.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\SpaceShip.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\SpaceShip.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\SpaceShip.cs",
+              "RelativeToolTip": "Assets\\Scripts\\SpaceShip.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T07:04:19.556Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Turret.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Turret\\Turret.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Turret\\Turret.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Turret\\Turret.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Turret\\Turret.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwCEAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T06:56:45.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Managers.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Managers\\Managers.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Managers\\Managers.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Managers\\Managers.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Managers\\Managers.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T06:33:00.827Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "UIMainMenu.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\UI\\UIMainMenu.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\UI\\UIMainMenu.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\UI\\UIMainMenu.cs",
+              "RelativeToolTip": "Assets\\Scripts\\UI\\UIMainMenu.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T06:21:39.047Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AudioManager.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Sounds\\AudioManager.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Sounds\\AudioManager.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Sounds\\AudioManager.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Sounds\\AudioManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T05:24:38.688Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UIButtonSounds.cs",
+              "DocumentMoniker": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Sounds\\UIButtonSounds.cs",
+              "RelativeDocumentMoniker": "Assets\\Scripts\\Sounds\\UIButtonSounds.cs",
+              "ToolTip": "D:\\DEV\\ProjectsForPortfolio\\GalaxyBlasterGame\\Assets\\Scripts\\Sounds\\UIButtonSounds.cs",
+              "RelativeToolTip": "Assets\\Scripts\\Sounds\\UIButtonSounds.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-07-02T05:13:40.618Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
