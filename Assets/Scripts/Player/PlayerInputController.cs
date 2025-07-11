@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerInputController : MonoBehaviour
 {
@@ -14,16 +15,22 @@ public class PlayerInputController : MonoBehaviour
     private void Start()
     {
         primaryTurret = GetComponentInChildren<Turret>();
+
     }
 
-    private void Update()
+    public void OnMove(InputValue value)
     {
-        verticalInput = Input.GetAxisRaw("Vertical");
-        horizontalInput = Input.GetAxisRaw("Horizontal");
+        verticalInput = value.Get<Vector2>().y;
+        horizontalInput = value.Get<Vector2>().x;
+    }
 
-        if (Input.GetMouseButton(0))
-        {
+    public void OnAttack(InputValue value)
+    {
+        if (value.isPressed)
+        {         
             primaryTurret.Fire();
+           
         }
     }
+
 }

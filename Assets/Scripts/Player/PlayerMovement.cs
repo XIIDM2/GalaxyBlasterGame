@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -22,7 +23,7 @@ public class PlayerMovement : MonoBehaviour
         Vector3 verticalMovement = Vector2.up * inputController.VerticalInput;
         Vector3 horizontalMovement = Vector2.right * inputController.HorizontalInput;
 
-        rigidBody.velocity = (verticalMovement + horizontalMovement).normalized * movementSpeed;
+        rigidBody.linearVelocity = (verticalMovement + horizontalMovement).normalized * movementSpeed;
 
         // rb.AddForce(Time.fixedDeltaTime * transform.up * vInput);
 
@@ -32,7 +33,7 @@ public class PlayerMovement : MonoBehaviour
 
     private void RotatePlayerToLookingPosition()
     {
-        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Mouse.current.position.ReadValue());
         Vector2 direction = (mousePosition - transform.position).normalized;
         float angle = Mathf.Atan2(direction.y, direction.x) * Mathf.Rad2Deg - 90f;
         rigidBody.rotation = Mathf.LerpAngle(rigidBody.rotation, angle, rotationSpeed * Time.fixedDeltaTime);

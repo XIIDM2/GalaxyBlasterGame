@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour
+public class AudioManager : MonoBehaviour, IStartUpManagers
 {
     private AudioSource[] audioSources;
     private AudioSource MusicSource;
@@ -12,9 +12,13 @@ public class AudioManager : MonoBehaviour
     private AudioClip clickButtonSound;
     private AudioClip mainMenuMusic;
 
-    private void Start()
+    public ManagerStatus Status {  get; private set; }
+
+    public void StartUp()
     {
-        audioSources = FindObjectsOfType<AudioSource>(true);
+        Status = ManagerStatus.Initializing;
+
+        audioSources = FindObjectsByType<AudioSource>(FindObjectsSortMode.InstanceID);
 
         foreach (AudioSource source in audioSources)
         {
@@ -43,8 +47,9 @@ public class AudioManager : MonoBehaviour
 
         mainMenuMusic = Resources.Load($"Sounds/Music/MainMenuMusic") as AudioClip;
 
-        PlayMainMenuMusic();
+        Status = ManagerStatus.Started;
 
+        PlayMainMenuMusic();
     }
 
     public void PlayClip(AudioClip clip)

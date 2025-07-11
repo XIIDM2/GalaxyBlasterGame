@@ -4,11 +4,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class ScenesManager : MonoBehaviour
+public class ScenesManager : MonoBehaviour, IStartUpManagers
 {
     public static ScenesManager Instance;
-
-    private bool defeatState = false;
 
     public bool DefeatState
     {
@@ -30,10 +28,6 @@ public class ScenesManager : MonoBehaviour
     public UnityAction Defeat;
     public UnityAction ScoreChanged;
 
-    private Coroutine slowTimeCoroutine;
-
-    private int score = 0;
-
     public int Score
     {
         get
@@ -47,8 +41,18 @@ public class ScenesManager : MonoBehaviour
         }
     }
 
-    private void Awake()
+    private Coroutine slowTimeCoroutine;
+
+    private bool defeatState = false;
+
+    private int score = 0;
+
+    public ManagerStatus Status { get; private set; }
+
+    public void StartUp()
     {
+        Status = ManagerStatus.Initializing;
+
         if (Instance != null && Instance != this)
         {
             Destroy(Instance);
@@ -57,12 +61,12 @@ public class ScenesManager : MonoBehaviour
 
         Instance = this;
         Time.timeScale = 1.0f;
+
+        DefeatState = false;
+
+        Status = ManagerStatus.Started;
     }
 
-    private void Start()
-    {
-        DefeatState = false;
-    }
 
     private void OnDestroy()
     {
