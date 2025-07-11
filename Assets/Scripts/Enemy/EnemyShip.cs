@@ -8,6 +8,6 @@ public class EnemyShip : SpaceShip
     protected override void OnSpaceShipDestroy()
     {
         base.OnSpaceShipDestroy();
-        SceneController.Instance.Score += addedScore;
+        ScenesManager.Instance.Score += addedScore;
     }
 }

@@ -10,8 +10,6 @@ public class AudioManager : MonoBehaviour
 
     private AudioClip hoverButtonSound;
     private AudioClip clickButtonSound;
-    private AudioClip turretFireSound;
-    private AudioClip SpaceShipHitSound;
     private AudioClip mainMenuMusic;
 
     private void Start()
@@ -42,13 +40,16 @@ public class AudioManager : MonoBehaviour
 
         hoverButtonSound = Resources.Load($"Sounds/UI/ButtonHover") as AudioClip;
         clickButtonSound = Resources.Load($"Sounds/UI/ButtonClick") as AudioClip;
-        turretFireSound = Resources.Load($"Sounds/Gameplay/LaserTurret") as AudioClip;
-        SpaceShipHitSound = Resources.Load($"Sounds/Gameplay/SpaceShipHit") as AudioClip;
 
-        mainMenuMusic = Resources.Load($"Music/MainMenuMusic") as AudioClip;
+        mainMenuMusic = Resources.Load($"Sounds/Music/MainMenuMusic") as AudioClip;
 
         PlayMainMenuMusic();
 
+    }
+
+    public void PlayClip(AudioClip clip)
+    {
+        SFXSource.PlayOneShot(clip);
     }
 
     public void PlayHoverSound()
@@ -59,16 +60,6 @@ public class AudioManager : MonoBehaviour
     public void PlayClickSound()
     {
         SFXSource.PlayOneShot(clickButtonSound);
-    }
-
-    public void PlayFireSound()
-    {
-        SFXSource.PlayOneShot(turretFireSound);
-    }
-
-    public void PlaySpaceShipHitSound()
-    {
-        SFXSource.PlayOneShot(SpaceShipHitSound);
     }
 
     public void PlayMainMenuMusic()

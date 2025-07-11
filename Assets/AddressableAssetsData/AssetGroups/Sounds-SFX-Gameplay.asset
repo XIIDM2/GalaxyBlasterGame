@@ -1,0 +1,25 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: Sounds-SFX-Gameplay
+  m_EditorClassIdentifier: 
+  m_GroupName: Sounds-SFX-Gameplay
+  m_Data:
+    m_SerializedData: []
+  m_GUID: cb6dbcc4dc9130c48a0cd56d1c72b410
+  m_SerializeEntries: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 19be8ff72cd665342942110c95b10a23, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 31079627c06443f4b803206038620137, type: 2}
+    - {fileID: 11400000, guid: f904522f9a53a3848837cf4eec118339, type: 2}

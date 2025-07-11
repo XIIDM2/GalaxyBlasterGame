@@ -4,15 +4,19 @@ using UnityEngine;
 
 public class Turret : MonoBehaviour
 {
-    [SerializeField] private float fireRate;
+    [SerializeField] private TurretObject turretData;
 
-    [SerializeField] private GameObject projectilePrefab;
+    private float fireRate;
+    private GameObject projectilePrefab;
+    private AudioClip fireSound;
 
     private bool canFire = true;
 
     private void Start()
     {
-        fireRate = 1.0f;
+        fireRate = turretData.FireRate;
+        projectilePrefab = turretData.ProjectilePrefab;
+        fireSound = turretData.FireSound;
     }
 
     private void OnDestroy()
@@ -31,18 +35,19 @@ public class Turret : MonoBehaviour
     {
         canFire = false;
         GameObject projectileObject = Instantiate(projectilePrefab, transform.position, transform.rotation);
-        Managers.Audio.PlayFireSound();
-        SetOwnerForProjectile(projectileObject);
+
+        Projectile projectile = projectileObject.GetComponent<Projectile>();
+        SetOwnerForProjectile(projectile);
+
+        Managers.AudioController.PlayClip(fireSound);
 
         yield return new WaitForSeconds(fireRate);
 
         canFire = true;
     }
 
-    private void SetOwnerForProjectile(GameObject projectileObject)
+    private void SetOwnerForProjectile(Projectile projectile)
     {
-        Projectile projectile = projectileObject.GetComponent<Projectile>();
-
         projectile.SetOwner(transform.root.gameObject.transform);
 
     }

@@ -6,7 +6,11 @@ public class Managers : MonoBehaviour
 {
     private static Managers instance;
 
-    public static AudioManager Audio;
+    public static AudioManager AudioController;
+    public static ScenesManager ScenesController;
+    public static CustomCursor CursorController;
+
+    public static bool ManagersInit = false;
 
 
     private void Awake()
@@ -19,9 +23,13 @@ public class Managers : MonoBehaviour
 
         instance = this;
 
-        Audio = GetComponentInChildren<AudioManager>();
+        AudioController = GetComponentInChildren<AudioManager>();
+        ScenesController = GetComponentInChildren<ScenesManager>();
+        CursorController = GetComponentInChildren<CustomCursor>();
 
         DontDestroyOnLoad(gameObject);
+
+        ManagersInit = true;
     }
 }
 

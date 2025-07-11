@@ -3,18 +3,24 @@ using UnityEngine;
 
 public class Projectile : MonoBehaviour
 {
-    [SerializeField] private float lifeTime;
+    [SerializeField] private ProjectileObject projectileData;
 
-    [SerializeField] private float speed;
-
-    [SerializeField] private int damage;
-
-    [SerializeField] private GameObject impactEffect;
+    private float lifeTime;
+    private float speed;
+    private int damage;
+    private GameObject impactEffect;
+    private AudioClip shipImpactSound;
 
     private Transform owner;
 
     private void Start()
     {
+        speed = projectileData.Speed;
+        damage = projectileData.Damage;
+        lifeTime = projectileData.LifeTime;
+        impactEffect = projectileData.ImpactEffect;
+        shipImpactSound = projectileData.ShipImpactSound;
+
         Destroy(gameObject, lifeTime);
     }
 
@@ -29,8 +35,8 @@ public class Projectile : MonoBehaviour
 
         if (collision.gameObject.transform.root.TryGetComponent<SpaceShip>(out SpaceShip ship))
         {
-            ship.ApplyDamage(damage);
-            Managers.Audio.PlaySpaceShipHitSound();
+            ship.Health.ApplyDamage(damage);
+            Managers.AudioController.PlayClip(shipImpactSound);
         }
 
         Instantiate(impactEffect, transform.position, Quaternion.identity);
