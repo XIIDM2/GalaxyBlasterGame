@@ -2,8 +2,10 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class AudioManager : MonoBehaviour, IStartUpManagers
+public class AudioManager : MonoBehaviour, IGameManager
 {
+    public ManagerStatus Status { get; private set; }
+
     private AudioSource[] audioSources;
     private AudioSource MusicSource;
     private AudioSource SFXSource;
@@ -11,8 +13,6 @@ public class AudioManager : MonoBehaviour, IStartUpManagers
     private AudioClip hoverButtonSound;
     private AudioClip clickButtonSound;
     private AudioClip mainMenuMusic;
-
-    public ManagerStatus Status {  get; private set; }
 
     public void StartUp()
     {

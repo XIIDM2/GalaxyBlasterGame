@@ -2516,10 +2516,10 @@ MonoBehaviour:
   - {fileID: 1215959302}
   - {fileID: 1759041307}
   spawnType: 0
-  spawnAmount: 1
+  spawnAmount: 2
   spawnPointNumber: 2
-  loopSpawn: 0
-  spawnTime: 999999
+  loopSpawn: 1
+  spawnTime: 5
 --- !u!1 &538978015
 GameObject:
   m_ObjectHideFlags: 0
@@ -4451,7 +4451,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7882457244139909991, guid: ee1b0e834066a414d839a6d4009fa015, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Continue
+      value: UnPause
       objectReference: {fileID: 0}
     - target: {fileID: 7882457244139909991, guid: ee1b0e834066a414d839a6d4009fa015, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName

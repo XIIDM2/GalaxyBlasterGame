@@ -4,10 +4,9 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.SceneManagement;
 
-public class ScenesManager : MonoBehaviour, IStartUpManagers
+public class ScenesManager : MonoBehaviour, IGameManager
 {
-    public static ScenesManager Instance;
-
+    public ManagerStatus Status { get; private set; }
     public bool DefeatState
     {
         get
@@ -26,40 +25,15 @@ public class ScenesManager : MonoBehaviour, IStartUpManagers
     }
 
     public UnityAction Defeat;
-    public UnityAction ScoreChanged;
-
-    public int Score
-    {
-        get
-        {
-            return score;
-        }
-        set
-        {
-            score = value;
-            ScoreChanged?.Invoke();
-        }
-    }
 
     private Coroutine slowTimeCoroutine;
 
     private bool defeatState = false;
 
-    private int score = 0;
-
-    public ManagerStatus Status { get; private set; }
-
     public void StartUp()
     {
         Status = ManagerStatus.Initializing;
 
-        if (Instance != null && Instance != this)
-        {
-            Destroy(Instance);
-            return;
-        }
-
-        Instance = this;
         Time.timeScale = 1.0f;
 
         DefeatState = false;
@@ -76,6 +50,7 @@ public class ScenesManager : MonoBehaviour, IStartUpManagers
     public void SetGameToDefeatState()
     {
         DefeatState = true;
+        Managers.DataController.SaveGame();
     }
 
     public void PauseTime()
@@ -107,6 +82,11 @@ public class ScenesManager : MonoBehaviour, IStartUpManagers
     public void MainMenu()
     {
         SceneManager.LoadScene(0);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 
     private IEnumerator SlowTimeRoutine()

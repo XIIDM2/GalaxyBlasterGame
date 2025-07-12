@@ -9,21 +9,21 @@ public class UIScoreText : MonoBehaviour
 
     private void Start()
     {
-        scoreText.text = $"Score: {ScenesManager.Instance.Score.ToString()}";
+        scoreText.text = $"Score: {Managers.DataController.Score.ToString()}";
 
-        ScenesManager.Instance.ScoreChanged += UpdateScoreText;
+        Managers.DataController.ScoreChanged += UpdateScoreText;
     }
 
     private void OnDestroy()
     {
-        if (ScenesManager.Instance != null)
+        if (Managers.DataController != null)
         {
-            ScenesManager.Instance.ScoreChanged -= UpdateScoreText;
+            Managers.DataController.ScoreChanged -= UpdateScoreText;
         }
     }
 
     private void UpdateScoreText()
     {
-        scoreText.text = $"Score: {ScenesManager.Instance.Score.ToString()}";
+        scoreText.text = $"Score: {Managers.DataController.Score.ToString()}";
     }
 }

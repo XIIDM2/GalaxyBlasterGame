@@ -7,42 +7,45 @@ public class Managers : MonoBehaviour
 {
     public static AudioManager AudioController;
     public static ScenesManager ScenesController;
-    public static CustomCursor CursorController;
+    public static DataManager DataController;
+    public static CustomCursorManager CursorController;
 
     public static bool ManagersInit = false;
 
-    public static int CountManagers => instance.countManagers;
-    public static int CountStartedManagers => instance.countStartedManagers;
+    public static int CountManagers => Instance.countManagers;
+    public static int CountStartedManagers => Instance.countStartedManagers;
 
     public static UnityAction<int, int> ManagerStarted;
 
     private int countManagers;
     private int countStartedManagers = 0;
 
-    private List<IStartUpManagers> managers;
+    private List<IGameManager> managers;
 
-    private static Managers instance;
+    public static Managers Instance;
 
 
     private void Awake()
     {
-        if (instance != null && instance != this)
+        if (Instance != null && Instance != this)
         {
             Destroy(gameObject);
             return;
         }
 
-        instance = this;
+        Instance = this;
 
         AudioController = GetComponentInChildren<AudioManager>();
         ScenesController = GetComponentInChildren<ScenesManager>();
-        CursorController = GetComponentInChildren<CustomCursor>();
+        CursorController = GetComponentInChildren<CustomCursorManager>();
+        DataController = GetComponentInChildren<DataManager>();
 
-        managers = new List<IStartUpManagers>();
+        managers = new List<IGameManager>();
 
         managers.Add(AudioController);
         managers.Add(ScenesController);
         managers.Add(CursorController);
+        managers.Add(DataController);
 
         countManagers = managers.Count;
 
@@ -54,7 +57,7 @@ public class Managers : MonoBehaviour
 
     private IEnumerator StartUpManagers()
     {
-        foreach (IStartUpManagers manager in managers)
+        foreach (IGameManager manager in managers)
         {
             manager.StartUp();
         }
@@ -67,7 +70,7 @@ public class Managers : MonoBehaviour
             int lastStartedManager = countStartedManagers;
             countStartedManagers = 0;
 
-            foreach (IStartUpManagers manager in managers)
+            foreach (IGameManager manager in managers)
             {
                 if (manager.Status == ManagerStatus.Started)
                 {

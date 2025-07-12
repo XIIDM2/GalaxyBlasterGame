@@ -15,15 +15,15 @@ public class UIDefeatPanel : MonoBehaviour
 
         defeatPanel.SetActive(false);
 
-        ScenesManager.Instance.Defeat += ShowDefeatPanel;
+        Managers.ScenesController.Defeat += ShowDefeatPanel;
 
     }
 
     private void OnDestroy()
     {
-        if (ScenesManager.Instance != null)
+        if (Managers.ScenesController != null)
         {
-            ScenesManager.Instance.Defeat -= ShowDefeatPanel;
+            Managers.ScenesController.Defeat -= ShowDefeatPanel;
         }
 
         if (canvasGroup != null)
@@ -41,12 +41,12 @@ public class UIDefeatPanel : MonoBehaviour
     {
         defeatPanel.SetActive(true);
 
-        scoreText.text = $"Score: {ScenesManager.Instance.Score.ToString()}";
+        scoreText.text = $"Score: {Managers.DataController.Score.ToString()}";
 
         canvasGroup.alpha = 0;
         defeatPanel.transform.localScale = Vector3.zero;
 
-        ScenesManager.Instance.SlowTime();
+        Managers.ScenesController.SlowTime();
 
         canvasGroup.DOFade(1, 1).SetEase(Ease.OutQuad);
         defeatPanel.transform.DOScale(Vector3.one, 1).SetEase(Ease.OutBack);

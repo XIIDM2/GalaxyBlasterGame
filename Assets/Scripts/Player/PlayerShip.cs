@@ -8,6 +8,6 @@ public class PlayerShip : SpaceShip
     {
         base.OnSpaceShipDestroy();
 
-        ScenesManager.Instance.SetGameToDefeatState();
+        Managers.ScenesController.SetGameToDefeatState();
     }
 }
