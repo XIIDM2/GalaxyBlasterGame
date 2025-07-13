@@ -14,6 +14,73 @@ public class AudioManager : MonoBehaviour, IGameManager
     private AudioClip clickButtonSound;
     private AudioClip mainMenuMusic;
 
+    public float sfxVolume
+    {
+        get
+        {
+            return AudioListener.volume;
+        }
+        set
+        {
+            AudioListener.volume = value;
+            PlayerPrefs.SetFloat("SFXVolume", sfxVolume);
+            PlayerPrefs.Save();
+
+        }
+    }
+
+    public bool sfxMute
+    {
+        get
+        {
+            return AudioListener.pause;
+        }
+        set
+        {
+            AudioListener.pause = value;
+        }
+    }
+
+    private float musicVolume;
+
+    public float MusicVolume
+    {
+        get
+        {
+            return musicVolume;
+        }
+        set
+        {
+            musicVolume = value;
+            if (MusicSource != null)
+            {
+                MusicSource.volume = musicVolume;
+                PlayerPrefs.SetFloat("MusicVolume", musicVolume);
+                PlayerPrefs.Save();
+            }
+        }
+    }
+
+    public bool MusicMute
+    {
+        get
+        {
+            if (MusicSource != null)
+            {
+                return MusicSource.mute;
+            }
+            return false;
+        }
+        set
+        {
+            if (MusicSource != null)
+            {
+                MusicSource.mute = value;
+            }
+
+        }
+    }
+
     public void StartUp()
     {
         Status = ManagerStatus.Initializing;
@@ -40,6 +107,12 @@ public class AudioManager : MonoBehaviour, IGameManager
         MusicSource.playOnAwake = true;
         MusicSource.loop = true;
         MusicSource.priority = 60;
+
+        sfxVolume = PlayerPrefs.GetFloat("SFXVolume", 1.0f);
+        MusicVolume = PlayerPrefs.GetFloat("MusicVolume", 1.0f);
+
+        MusicSource.ignoreListenerPause = true;
+        MusicSource.ignoreListenerVolume = true;
 
 
         hoverButtonSound = Resources.Load($"Sounds/UI/ButtonHover") as AudioClip;

@@ -10,7 +10,7 @@ public class UIController : MonoBehaviour
         Managers.ScenesController.PauseTime();
     }
 
-    public void UnPause()
+    public void UnPauseGame()
     {
         Managers.ScenesController.ResetTime();
     }
