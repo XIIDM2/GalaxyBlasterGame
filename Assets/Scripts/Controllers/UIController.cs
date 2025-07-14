@@ -19,14 +19,14 @@ public class UIController : MonoBehaviour
     {
         Managers.ScenesController.ResetTime();
         Managers.DataController.LoadGame();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void NewGame()
     {
         Managers.ScenesController.ResetTime();
         Managers.DataController.ResetData();
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 
     public void Restart()

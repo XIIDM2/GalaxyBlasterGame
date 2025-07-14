@@ -2515,8 +2515,8 @@ MonoBehaviour:
   - {fileID: 1672491297}
   - {fileID: 1215959302}
   - {fileID: 1759041307}
-  spawnType: 0
-  spawnAmount: 2
+  spawnType: 1
+  spawnAmount: 1
   spawnPointNumber: 2
   loopSpawn: 1
   spawnTime: 5
