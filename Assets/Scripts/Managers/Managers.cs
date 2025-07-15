@@ -9,7 +9,6 @@ public class Managers : MonoBehaviour
     public static ScenesManager ScenesController;
     public static DataManager DataController;
     public static SettingsManager SettingsController;
-    public static CustomCursorManager CursorController;
 
     public static bool ManagersInit = false;
 
@@ -38,7 +37,6 @@ public class Managers : MonoBehaviour
 
         AudioController = GetComponentInChildren<AudioManager>();
         ScenesController = GetComponentInChildren<ScenesManager>();
-        CursorController = GetComponentInChildren<CustomCursorManager>();
         DataController = GetComponentInChildren<DataManager>();
         SettingsController = GetComponentInChildren<SettingsManager>();
 
@@ -46,7 +44,6 @@ public class Managers : MonoBehaviour
 
         managers.Add(AudioController);
         managers.Add(ScenesController);
-        managers.Add(CursorController);
         managers.Add(DataController);
         managers.Add(SettingsController);
 
