@@ -71,8 +71,6 @@
 
 - Unity
 - Visual Studio (IDE)
-- ScriptableObjects
-- Coroutines
 - DOTween (HOTween v2)
 - Zenject
 - Addressables
